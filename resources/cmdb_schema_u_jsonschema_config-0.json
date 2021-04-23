@@ -1,0 +1,32 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_jsonschema_config-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "表单配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "format": "textarea",
+          "title": "JSONSCHEMA表单"
+        }
+      },
+      "required": []
+    },
+    "indexes": []
+  },
+  "indexes": {}
+}

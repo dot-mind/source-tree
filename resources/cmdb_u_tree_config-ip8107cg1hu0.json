@@ -1,0 +1,160 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_u_tree_config-ip8107cg1hu0",
+    "schema_id": "cmdb_schema_u_tree_config-0",
+    "name": "测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "treeData": [
+      {
+        "key": "0-fa90085c384c",
+        "title": "Project",
+        "pid": "0",
+        "data": {
+          "viewList": [],
+          "workList": [],
+          "schema": "cmdb_u_jsonschema_config-2zcyer6c3hc4d"
+        },
+        "children": [
+          {
+            "key": "0-fa90085c384c-3c4ea67402ac",
+            "title": "Environment",
+            "pid": "0-fa90085c384c",
+            "data": {
+              "viewList": [],
+              "workList": [],
+              "schema": "cmdb_u_jsonschema_config-27a431hkxf2of",
+              "data": {}
+            },
+            "children": [
+              {
+                "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7",
+                "title": "Cloud",
+                "pid": "0-fa90085c384c-3c4ea67402ac",
+                "data": {
+                  "viewList": [],
+                  "workList": [],
+                  "schema": "cmdb_u_jsonschema_config-c87rc23kbck5",
+                  "data": {}
+                },
+                "children": [
+                  {
+                    "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86",
+                    "title": "Region",
+                    "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7",
+                    "data": {
+                      "viewList": [],
+                      "workList": [],
+                      "schema": "cmdb_u_jsonschema_config-1pj5plrh28291",
+                      "data": {}
+                    },
+                    "children": [
+                      {
+                        "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-3110ffdb3e84",
+                        "title": "Mongo",
+                        "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86",
+                        "data": {
+                          "viewList": [
+                            "cmdb_view-3nn08436um4qh",
+                            "cmdb_view-1oabxrqercls8",
+                            "cmdb_view-2d02gzcrej742",
+                            "cmdb_view-2ygzb1m70iuz1",
+                            "cmdb_view-3hfyyixs2d7ce",
+                            "cmdb_view-vkjl099z23ul"
+                          ],
+                          "workList": [
+                            "cmdb_x-1y92p5sw67gf5"
+                          ],
+                          "schema": "cmdb_u_jsonschema_config-f9auk7b55gdi",
+                          "data": {
+                            "region1": null,
+                            "region2": null
+                          }
+                        },
+                        "children": [
+                          {
+                            "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-3110ffdb3e84-add6a6dc6d9e",
+                            "title": "mongo001",
+                            "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-3110ffdb3e84",
+                            "data": {
+                              "viewList": [],
+                              "workList": [],
+                              "schema": "",
+                              "data": {
+                                "mongo1": null,
+                                "mongo4": null,
+                                "mongo5": null,
+                                "mongo6": null
+                              }
+                            }
+                          },
+                          {
+                            "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-3110ffdb3e84-f06743de863a",
+                            "title": "mongo002",
+                            "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-3110ffdb3e84",
+                            "data": {
+                              "viewList": [],
+                              "workList": [],
+                              "schema": "",
+                              "data": {
+                                "mongo1": null,
+                                "mongo4": null,
+                                "mongo5": null,
+                                "mongo6": null
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-db682eece0fb",
+                        "title": "Redis",
+                        "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86",
+                        "data": {
+                          "viewList": [],
+                          "workList": [
+                            "cmdb_x-1y92p5sw67gf5"
+                          ],
+                          "schema": "cmdb_u_jsonschema_config-3ol6gicswsg1w",
+                          "data": {
+                            ".inode.name": null,
+                            ".inode.descr": null,
+                            ".indexes.cmdb_index-1l4scwvoccb5u": null,
+                            ".indexes.cmdb_index-1hotvuqce4pxx": null
+                          }
+                        }
+                      },
+                      {
+                        "key": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86-dd070b4334a3",
+                        "title": "Logic",
+                        "pid": "0-fa90085c384c-3c4ea67402ac-30cc2c6044c7-d37932e55d86",
+                        "data": {
+                          "viewList": [],
+                          "workList": [
+                            "cmdb_x-1y92p5sw67gf5"
+                          ],
+                          "schema": "cmdb_u_jsonschema_config-2pcx1gcklywr5",
+                          "data": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "indexes": {}
+}

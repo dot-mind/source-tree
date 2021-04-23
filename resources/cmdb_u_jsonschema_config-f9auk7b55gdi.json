@@ -1,0 +1,20 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_u_jsonschema_config-f9auk7b55gdi",
+    "schema_id": "cmdb_schema_u_jsonschema_config-0",
+    "name": "Mongo",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.configserverSize\":{\"type\":\"number\",\"default\":20,\"title\":\"configserver大小（G）\"},\".data.size\":{\"type\":\"number\",\"default\":1024,\"title\":\"存储空间（G）\"},\".data.engine\":{\"type\":\"string\",\"default\":\"WiredTiger\",\"title\":\"存储引擎\"},\".data.version\":{\"type\":\"string\",\"default\":\"MongoDB 4.2\",\"title\":\"版本\"},\".data.protocol\":{\"type\":\"string\",\"title\":\"协议\",\"default\":\"mongoDB\"}}}"
+  },
+  "indexes": {}
+}

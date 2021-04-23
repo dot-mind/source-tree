@@ -1,0 +1,190 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-dnvy03n2vmm2",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "查询脚本执行记录",
+    "namespace": "/多云运维管理/作业平台",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-3cu4v1w20seby"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": "indexes.cmdb_index-3kyli9jj9w7ua",
+          "op": "=",
+          "value": "{var:vars.work_result}"
+        },
+        {
+          "field": "vars.work_result",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "indexes.cmdb_index-3d2auxg8f3gdv.inode.name",
+          "op": "=",
+          "value": "{var:vars.server_name}"
+        },
+        {
+          "field": "vars.server_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.start_time",
+          "op": "\u003e",
+          "value": 1
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": ".indexes.cmdb_index-5nmjlz3wl24o",
+              "op": "=",
+              "value": "{var:vars.start_time}"
+            },
+            {
+              "field": ".indexes.cmdb_index-5nmjlz3wl24o",
+              "op": "=",
+              "value": "$null"
+            }
+          ]
+        },
+        {
+          "field": "indexes.cmdb_index-2f84ou7p5ewhp",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "indexes.cmdb_index-bqwuyoxmwrzv",
+          "op": "=",
+          "value": "{var:vars.script_id}"
+        },
+        {
+          "field": "vars.script_id",
+          "op": "=",
+          "value": "$empty"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "multi": true,
+      "selects": [
+        ".indexes.cmdb_index-3kyli9jj9w7ua as 执行结果",
+        ".indexes.cmdb_index-3d2auxg8f3gdv.inode.id as 目标服务器",
+        ".data.snapshot.ssh_config.host as host",
+        ".data.exec_descr as 结果描述",
+        ".indexes.cmdb_index-5nmjlz3wl24o as 开始时间",
+        ".data.elapsed_time as 执行耗时（秒）",
+        ".data.exit_code as 退出码",
+        ".data.output as 输出结果",
+        ".data.snapshot.output_schema as 输出规格",
+        ".data.stdout",
+        ".data.stderr"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "work_result": {
+                "type": "string",
+                "title": "执行任务状态",
+                "enum": [
+                  "SUCCEEDED",
+                  "WAITING",
+                  "RUNNING",
+                  "FINISHED",
+                  "FAILED",
+                  "CANCELED",
+                  "$empty"
+                ],
+                "enumNames": [
+                  "执行成功",
+                  "等待执行",
+                  "正在执行",
+                  "执行完成",
+                  "执行失败",
+                  "已取消",
+                  "所有"
+                ]
+              },
+              "server_name": {
+                "type": "string",
+                "title": "服务器名称"
+              },
+              "start_time": {
+                "type": "number",
+                "title": "开始时间",
+                "format": "date-time",
+                "default": 0
+              },
+              "id": {
+                "type": "string",
+                "title": "任务ID",
+                "format": "hidden"
+              },
+              "script_id": {
+                "type": "string",
+                "title": "脚本ID",
+                "format": "hidden"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

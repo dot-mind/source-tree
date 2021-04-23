@@ -1,0 +1,20 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_u_jsonschema_config-38wsz29h5y70w",
+    "schema_id": "cmdb_schema_u_jsonschema_config-0",
+    "name": "Battle",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-1l4scwvoccb5u\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2fuz8sxoztsz1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"cloudRegion\"},\".indexes.cmdb_index-3bxtoukdedsor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"虚拟交换机\"},\".indexes.cmdb_index-1g302j2psvvd1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-a7bah0a3iocz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"可用区\"},\".indexes.cmdb_index-1yhey410ex3f2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"vpc\"},\".indexes.cmdb_index-3vumkyvanuhiy\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1cuk8miv8uzhq\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"安全组\"},\".data.systemDiskSize\":{\"type\":\"number\",\"default\":200,\"title\":\"系统盘（G）\"},\".indexes.cmdb_index-1yam7nytu0lzp\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3jdvwh6ek90nx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"镜像\"}}}"
+  },
+  "indexes": {}
+}

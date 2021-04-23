@@ -1,0 +1,64 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-66kbda97gwtv",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "内存数据",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {},
+      "resId": ""
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"ID\"}},\"required\":[]}",
+      "readonly": true,
+      "vars": {},
+      "global": {
+        "id": "id"
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.a281ce9512dc.state.__lib__.id": "{var: state.vars.id}",
+      "children.a281ce9512dc.children.8353d887d102.children.b8227cd67938.state.__vars__.vars.id.value": "{var: children.a281ce9512dc.children.cac3daa7bb77.state.__row__.indexes.cmdb_index-m5rn0qhfaw4c.inode.id}",
+      "children.d48e8cd2b21c.state.text": "{var: state.vars.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "a281ce9512dc"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3c0e8gc51yw95"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-vars",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

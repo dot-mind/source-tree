@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1guxj4pw8mz5d",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "终止工单判断",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "case": "PROCESSING",
+        "uuid": "41f561bb587d"
+      },
+      {
+        "uuid": "eaddd1d3aec1"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.value": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-20n8avdlradb9",
+      "cmdb_mpage-244so02mifz8y"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

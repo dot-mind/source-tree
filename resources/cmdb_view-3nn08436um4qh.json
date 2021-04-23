@@ -1,0 +1,64 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-3nn08436um4qh",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2wvkyae6mh232\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2wvkyae6mh232\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"],\"enumNames\":[\"名称\",\"所属云资源配置\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2wvkyae6mh232\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cloud_resource_config' }}\"}}}",
+      "viewData": [],
+      "forms": [
+        {
+          "default": null,
+          "title": "名称",
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-cloud_resource_config",
+          "title": "所属云资源配置",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": "cmdb_x_x-6iplof81wxv_default",
+          "widget": "table",
+          "disabled": true
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x_u_crf_server-0_default",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "type": "default",
+            "open_type": "link",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-3nn08436um4qh"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-okyb3pljbos9"
+  }
+}

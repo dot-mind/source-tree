@@ -1,0 +1,103 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-2xvyskqdrfpuo",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "资源树配置创建对象",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "es5"
+      },
+      {
+        "from": "es5",
+        "to": "__END__"
+      }
+    ],
+    "nodes": [
+      {
+        "auto_run": true,
+        "component": "cmdb_component-vars",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        },
+        "descr": "自定义表单",
+        "inputs": {
+          "*": {}
+        },
+        "name": "__START__"
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-vars",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "enum": [
+                  "SUCCEEDED",
+                  "FAILED"
+                ]
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "output": {
+                "type": "object",
+                "properties": {
+                  "failed_count": {
+                    "type": "integer"
+                  },
+                  "create_count": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "descr": "自定义表单",
+        "inputs": {
+          "es5": "{var:es5.output}"
+        },
+        "name": "__END__"
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "input_schema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\",\"enum\":[\"SUCCEEDED\",\"FAILED\"]},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"},\"output\":{\"type\":\"object\",\"properties\":{\"failed_count\":{\"type\":\"integer\"},\"create_count\":{\"type\":\"integer\"}}}}}",
+          "script": "resources/scripts/cmdb_workflow-2xvyskqdrfpuo.data.nodes.2.config.script.js"
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "name": "es5"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

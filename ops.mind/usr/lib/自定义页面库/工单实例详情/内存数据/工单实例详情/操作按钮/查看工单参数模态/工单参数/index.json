@@ -1,0 +1,41 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-pzmgxgipt4bq",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工单参数",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.form_data": "FULL_EXPORTED",
+      "state.schema": "FULL_EXPORTED"
+    },
+    "state": {
+      "form_data": {},
+      "readOnly": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

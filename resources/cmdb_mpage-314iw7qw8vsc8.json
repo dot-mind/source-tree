@@ -1,0 +1,45 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-314iw7qw8vsc8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "JsonSchema表单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.form_data.id": "FULL_EXPORTED",
+      "state.form_data": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.form_data.adminMode": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"选择资源树配置\",\"format\":\"ql-selector?id=cmdb_ql-3d9man53w4lu6\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"ui:width\":\"50%\"},\"adminMode\":{\"type\":\"boolean\",\"title\":\"是否开启管理员\",\"ui:width\":\"50%\",\"ui:widget\":\"switch\"}},\"required\":[]}",
+      "form_data": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

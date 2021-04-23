@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-okyb3pljbos9",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "测试模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-tqhj9nh9tj44"
+    },
+    "children": {
+      "children.5b70ed9abf18.state.__lib__.view_id": "cmdb_view-3nn08436um4qh"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3nacf8cqbimms",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工单动作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.workOrderList": "FULL_EXPORTED",
+      "state.qlConfig": "SEMI_EXPORTED",
+      "state.qlConfig.ql_id": "FULL_EXPORTED",
+      "state.qlConfig.ql_input": "SEMI_EXPORTED",
+      "state.qlConfig.ql_input.conditions": "FULL_EXPORTED",
+      "state.qlConfig.ql_input.objects": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.qlConfig.ql_input.objects.0": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "workOrderList": [],
+      "qlConfig": {
+        "ql_input": {
+          "conditions": [],
+          "objects": [
+            null
+          ]
+        }
+      },
+      "type": "link",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-2bldte2vpiyez",
+    "cmdb_index-mpage_component_type": "BUSINESS"
+  }
+}

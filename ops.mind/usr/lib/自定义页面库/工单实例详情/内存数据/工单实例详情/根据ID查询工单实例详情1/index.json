@@ -1,0 +1,82 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2v1i8c6sgfp54",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "根据ID查询工单实例详情1",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__row__": "SEMI_EXPORTED",
+      "state.__row__.data.input": "FULL_EXPORTED",
+      "state.__row__.data.input_schema": "FULL_EXPORTED",
+      "state.__row__.data.steps": "SEMI_EXPORTED",
+      "state.__row__.data.steps.0": "SEMI_EXPORTED",
+      "state.__row__.data.steps.0.name": "FULL_EXPORTED",
+      "state.__row__.data.steps.0.step_instance_id": "FULL_EXPORTED",
+      "state.__row__.data.steps.0.ticket_comp_instance_id": "FULL_EXPORTED",
+      "state.__row__.data.steps.1": "SEMI_EXPORTED",
+      "state.__row__.data.steps.1.name": "FULL_EXPORTED",
+      "state.__row__.data.steps.1.step_instance_id": "FULL_EXPORTED",
+      "state.__row__.data.steps.2": "SEMI_EXPORTED",
+      "state.__row__.data.steps.2.name": "FULL_EXPORTED",
+      "state.__row__.data.steps.2.step_instance_id": "FULL_EXPORTED",
+      "state.__row__.indexes.cmdb_index-bu4nsnqtx6os": "FULL_EXPORTED",
+      "state.__row__.indexes.cmdb_index-m5rn0qhfaw4c": "FULL_EXPORTED",
+      "state.__row__.indexes.cmdb_index-m5rn0qhfaw4c.inode.id": "FULL_EXPORTED",
+      "state.__row__.inode.name": "FULL_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__.vars.id.op": "FULL_EXPORTED",
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__row__.data.ticket_status": "FULL_EXPORTED",
+      "state.__row__.data.ticket_message": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-24rzowx1hmrbi",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.input": {},
+        "data.steps": [
+          {
+            "name": null,
+            "step_instance_id": null
+          }
+        ]
+      },
+      "__vars__": {
+        "vars.id": {
+          "value": null
+        }
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

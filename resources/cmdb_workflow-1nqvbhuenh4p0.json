@@ -1,0 +1,385 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-1nqvbhuenh4p0",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[多云运维管理][作业平台] 重新执行脚本执行任务记录",
+    "namespace": "",
+    "descr": "重新执行指定的脚本执行记录",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "database",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "task_id": {
+                "type": "string"
+              },
+              "step_id": {
+                "type": "string",
+                "title": "工单步骤id"
+              },
+              "task_record_scope": {
+                "type": "object",
+                "properties": {
+                  "ql_id": {
+                    "type": "string"
+                  },
+                  "vars": {
+                    "type": "object",
+                    "properties": {}
+                  },
+                  "objects": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": []
+              }
+            }
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "task_record_scope": {
+              "vars": {}
+            }
+          }
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "enum": [
+                  "SUCCEEDED",
+                  "FAILED"
+                ]
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "预处理任务记录": {
+            "result": "{var:预处理任务记录.output.result}",
+            "result_name": "{var:预处理任务记录.output.result_name}",
+            "message": "{var:预处理任务记录.output.message}"
+          }
+        }
+      },
+      {
+        "name": "预处理成功",
+        "component": "cmdb_component-condition",
+        "descr": "条件判断",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "op": "字符串-相等",
+          "array": false
+        },
+        "inputs": {
+          "预处理任务记录": {
+            "target": "SUCCEEDED",
+            "value": "{var:预处理任务记录.output.result}"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "预处理任务记录",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1nqvbhuenh4p0.data.nodes.3.config.script.js",
+          "timeout_s": -1,
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"task_id\":{\"type\":\"string\"},\"task_record_scope\":{\"type\":\"object\",\"properties\":{\"ql_id\":{\"type\":\"string\"},\"vars\":{\"type\":\"object\",\"properties\":{},\"required\":[]},\"objects\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}},\"required\":[]}},\"required\":[]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"},\"task_records\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"exec_mode\":{\"type\":\"string\",\"title\":\"执行方式\"},\"exec_user\":{\"type\":\"string\"},\"work_dir\":{\"type\":\"string\"},\"ssh_config\":{\"type\":\"object\",\"properties\":{\"auth_method\":{\"type\":\"string\"},\"password\":{\"type\":\"string\"},\"ssh_key\":{\"type\":\"string\"},\"target\":{\"type\":\"string\"}},\"required\":[]},\"exec_time_limit\":{\"type\":\"integer\"},\"script\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}},\"required\":[]}}},\"required\":[]}"
+        },
+        "inputs": {
+          "__START__": {
+            "task_record_scope": {
+              "vars": "{var:__START__.output.task_record_scope.vars}",
+              "ql_id": "{var:__START__.output.task_record_scope.ql_id}",
+              "objects": "{var:__START__.output.task_record_scope.objects}"
+            },
+            "task_id": "{var:__START__.output.task_id}"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "展开脚本执行记录",
+        "component": "cmdb_component-foreach",
+        "descr": "列表迭代",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "iterate_config": {
+            "mode": "best-effort",
+            "max_parallel": 30
+          },
+          "output_config": {
+            "mode": "by-batch",
+            "batch_size": 1000000
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "预处理成功": "{var:预处理任务记录.output.task_records}"
+        }
+      },
+      {
+        "name": "ReExecTaskRecord",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1nqvbhuenh4p0.data.nodes.5.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"task_record\":{\"type\":\"object\",\"properties\":{}},\"task_id\":{\"type\":\"string\",\"title\":\"执行任务 ID\"}},\"title\":\"执行参数\",\"required\":[\"task_record\",\"task_id\"]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\",\"title\":\"结果\"},\"result_name\":{\"type\":\"string\",\"title\":\"结果名\"},\"message\":{\"type\":\"string\",\"title\":\"结果描述\"}},\"title\":\"执行结果\"}",
+          "timeout_s": -1
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "展开脚本执行记录#iterate": {
+            "task_record_id": "{var:展开脚本执行记录#iterate.output}",
+            "task_id": "{var:__START__.output.task_id}"
+          },
+          "Agent": {
+            "task_id": "{var:__START__.output.task_id}",
+            "task_record": "{var:展开脚本执行记录#iterate.output}"
+          }
+        }
+      },
+      {
+        "name": "任务完成处理",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1nqvbhuenh4p0.data.nodes.6.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"step_id\":{\"type\":\"string\",\"title\":\"步骤\"},\"task_id\":{\"type\":\"string\",\"title\":\"任务id\"}},\"required\":[\"task_id\"]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "展开脚本执行记录": {
+            "step_id": "{var:__START__.output.step_id}",
+            "task_id": "{var:__START__.output.task_id}"
+          }
+        }
+      },
+      {
+        "name": "SSH",
+        "component": "cmdb_component-condition",
+        "descr": "条件判断",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "op": "字符串-相等",
+          "array": false
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "展开脚本执行记录#iterate": {
+            "value": "{var:展开脚本执行记录#iterate.output.exec_mode}",
+            "target": "ssh"
+          }
+        }
+      },
+      {
+        "name": "Agent",
+        "component": "cmdb_component-condition",
+        "descr": "条件判断",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "op": "字符串-不相等",
+          "array": false
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "展开脚本执行记录#iterate": {
+            "target": "ssh",
+            "value": "{var:展开脚本执行记录#iterate.output.exec_mode}"
+          }
+        }
+      },
+      {
+        "name": "ssh脚本执行",
+        "component": "cmdb_component-ssh_task",
+        "descr": "执行 SSH 远程指令",
+        "auto_run": true,
+        "settings": {},
+        "config": {},
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "更新状态时间": {
+            "auth_method": "{var:展开脚本执行记录#iterate.output.ssh_config.auth_method}",
+            "ssh_key": "{var:展开脚本执行记录#iterate.output.ssh_config.ssh_key}",
+            "user": "{var:展开脚本执行记录#iterate.output.exec_user}",
+            "password": "{var:展开脚本执行记录#iterate.output.ssh_config.password}",
+            "target": "{var:展开脚本执行记录#iterate.output.ssh_config.target}",
+            "body": "{var:展开脚本执行记录#iterate.output.script}",
+            "timeout": "{var:展开脚本执行记录#iterate.output.exec_time_limit}"
+          }
+        }
+      },
+      {
+        "name": "ssh脚本执行后处理",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1nqvbhuenh4p0.data.nodes.10.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"record\":{\"type\":\"object\",\"properties\":{}},\"output\":{\"type\":\"object\",\"properties\":{}}},\"required\":[]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "ssh脚本执行": {
+            "record": "{var:展开脚本执行记录#iterate.output}",
+            "output": "{var:ssh脚本执行.output}"
+          },
+          "ssh脚本执行#failed": {
+            "record": "{var:展开脚本执行记录#iterate.output}",
+            "output": "{var:ssh脚本执行#failed.output}"
+          }
+        }
+      },
+      {
+        "name": "更新状态时间",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1nqvbhuenh4p0.data.nodes.11.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"记录id\"}},\"required\":[\"id\"]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "timeout_s": 10
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "SSH": {
+            "id": "{var:展开脚本执行记录#iterate.output.id}"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "预处理任务记录"
+      },
+      {
+        "from": "预处理任务记录",
+        "to": "__END__"
+      },
+      {
+        "from": "预处理任务记录",
+        "to": "预处理成功"
+      },
+      {
+        "from": "预处理成功",
+        "to": "展开脚本执行记录"
+      },
+      {
+        "from": "展开脚本执行记录",
+        "to": "任务完成处理"
+      },
+      {
+        "from": "展开脚本执行记录#iterate",
+        "to": "SSH"
+      },
+      {
+        "from": "展开脚本执行记录#iterate",
+        "to": "Agent"
+      },
+      {
+        "from": "Agent",
+        "to": "ReExecTaskRecord"
+      },
+      {
+        "from": "SSH",
+        "to": "更新状态时间"
+      },
+      {
+        "from": "更新状态时间",
+        "to": "ssh脚本执行"
+      },
+      {
+        "from": "ssh脚本执行",
+        "to": "ssh脚本执行后处理"
+      },
+      {
+        "from": "ssh脚本执行#failed",
+        "to": "ssh脚本执行后处理"
+      }
+    ],
+    "persist_level": "job",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-10mhkrmog5m92",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "关联到资源树配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "cmdb_schema_u_tree_config-0",
+    "schema": {
+      "format": "ql-selector?id=cmdb_ql-3d9man53w4lu6\u0026select_mode=single\u0026spec=id",
+      "type": "$index_type"
+    },
+    "multi": false
+  },
+  "indexes": {}
+}

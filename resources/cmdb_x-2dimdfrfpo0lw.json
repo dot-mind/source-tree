@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2dimdfrfpo0lw",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "JSONSCHEMA表单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "schema",
+    "field_name": "JSONSCHEMA表单",
+    "field_type": "string",
+    "searched": false,
+    "is_array": null,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": "textarea",
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": false,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": false,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-3g9yel3oalu49",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

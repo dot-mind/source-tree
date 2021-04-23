@@ -1,0 +1,112 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-36xusnrn4gdma",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[多云运维管理][运维工单] 终止一个处理中的「工单实例」",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "终止工单"
+      },
+      {
+        "from": "终止工单",
+        "to": "__END__"
+      }
+    ],
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "ticket_template_id": {
+                "type": "string"
+              },
+              "ticket_instance_id": {
+                "type": "string"
+              }
+            },
+            "title": "工单终止参数",
+            "required": []
+          }
+        },
+        "inputs": {
+          "*": {}
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string"
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "title": "工单终止结果",
+            "required": []
+          }
+        },
+        "inputs": {
+          "终止工单": "{var:终止工单.output}"
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-36xusnrn4gdma.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"ticket_template_id\":{\"type\":\"string\"},\"ticket_instance_id\":{\"type\":\"string\"}},\"title\":\"工单终止参数\",\"required\":[]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"title\":\"工单终止结果\",\"required\":[]}",
+          "timeout_s": -1
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "name": "终止工单",
+        "settings": {},
+        "auto_run": true
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

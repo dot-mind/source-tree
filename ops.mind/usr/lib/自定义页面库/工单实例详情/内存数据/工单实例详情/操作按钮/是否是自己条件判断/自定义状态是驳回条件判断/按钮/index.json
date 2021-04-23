@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-zn9p6w8z7llf",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "按钮",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "config.jump.vars.0": "FULL_EXPORTED",
+      "config.jump.vars": "SEMI_EXPORTED",
+      "config.jump": "SEMI_EXPORTED",
+      "config": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "href": "$app=cmdb_mpage-1vreqcjoqh0mx\u0026id=$0",
+        "vars": [
+          ""
+        ]
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "text": "重新发起",
+      "icon": "rocket",
+      "onClick": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

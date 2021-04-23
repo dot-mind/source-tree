@@ -1,0 +1,98 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-3qu911maqywh8",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[AutoGen] 运维工单（测试）Canceler 工作流",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "persist_level": "job_unit",
+    "persist_retention": 3600,
+    "nodes": [
+      {
+        "component": "cmdb_component-vars",
+        "descr": "起始节点",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "ticket_instance_id": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "inputs": {
+          "*": {}
+        },
+        "auto_run": true,
+        "name": "__START__"
+      },
+      {
+        "name": "PrepareAndCancel",
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "inputs": {
+          "__START__": {
+            "ticket_instance_id": "{var:__START__.output.ticket_instance_id}"
+          }
+        },
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-3qu911maqywh8.data.nodes.1.config.script.js",
+          "timeout_s": 300,
+          "input_schema": "{\"type\":\"object\",\"properties\":{\"ticket_instance_id\":{\"type\":\"string\"}}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}}}"
+        },
+        "descr": "终止「工单实例」"
+      },
+      {
+        "component": "cmdb_component-vars",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string"
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "inputs": {
+          "PrepareAndCancel": {
+            "result": "{var:PrepareAndCancel.output.result}",
+            "result_name": "{var:PrepareAndCancel.output.result_name}",
+            "message": "{var:PrepareAndCancel.output.message}"
+          }
+        },
+        "name": "__END__",
+        "auto_run": true,
+        "descr": "返回节点"
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "PrepareAndCancel"
+      },
+      {
+        "from": "PrepareAndCancel",
+        "to": "__END__"
+      }
+    ]
+  },
+  "indexes": {}
+}

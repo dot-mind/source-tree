@@ -1,0 +1,139 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-39p1bz9thij06",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Tar包（资源树配置）",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_ql-2kaejqjmkmxvf",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_mpage-39p1bz9thij06",
+            "cmdb_ql-2kaejqjmkmxvf",
+            "cmdb_u_jsonschema_config-2zcyer6c3hc4d",
+            "cmdb_u_jsonschema_config-27a431hkxf2of",
+            "cmdb_u_jsonschema_config-c87rc23kbck5",
+            "cmdb_u_jsonschema_config-38wsz29h5y70w",
+            "cmdb_u_jsonschema_config-2pcx1gcklywr5",
+            "cmdb_mpage-ma6qbeq117fj",
+            "cmdb_mpage-314iw7qw8vsc8",
+            "cmdb_mpage-37c5vospxvja6"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "Tar包（所有内容资源）(自定义)",
+            "Tar包（所有内容资源）(自定义)",
+            "Project",
+            "Environment",
+            "Cloud",
+            "Battle",
+            "Logic",
+            "配置资源树",
+            "JsonSchema表单",
+            "24 栅格系统"
+          ]
+        },
+        "inode.schema_id": {
+          "action_config": {},
+          "data": [
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_ql-0",
+            "cmdb_schema_u_jsonschema_config-0",
+            "cmdb_schema_u_jsonschema_config-0",
+            "cmdb_schema_u_jsonschema_config-0",
+            "cmdb_schema_u_jsonschema_config-0",
+            "cmdb_schema_u_jsonschema_config-0",
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_mpage-1"
+          ]
+        },
+        "inode.lock": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1618992494,
+            1618992494,
+            1618992243,
+            1618992232,
+            1618992225,
+            1618992216,
+            1618992202,
+            1618989984,
+            1618990026,
+            1618990119
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree",
+            "cmdb_account-v1:tree"
+          ]
+        }
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-tar",
+    "cmdb_index-mpage_component_type": "TAR"
+  }
+}

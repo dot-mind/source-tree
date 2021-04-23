@@ -1,0 +1,31 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-31egrggcda6om",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "测试资源树模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-1l45czaovb9al"
+    },
+    "children": {
+      "children.c4888ba20b4f.state.__lib__": {
+        "id": "cmdb_u_tree_config-2b9uuqdk6w81g",
+        "descr": "工单模版，以卡片形式展示工单"
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2kaejqjmkmxvf",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "Tar包（资源树配置）",
+    "namespace": "/tar",
+    "descr": "导出所有内容资源，包括L2层的所有产物，以及一些自定义对象，如服务器、VPC等",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "!-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_wf_job-0",
+              "cmdb_schema_wf_job_unit-0",
+              "cmdb_schema_x-2758j88lnppcx",
+              "cmdb_schema_x-l8a9znlzun9c",
+              "cmdb_schema_x-1npbqzvnj45gz",
+              "cmdb_schema_server_chan-0",
+              "cmdb_schema_server_session_replay_file-0",
+              "cmdb_schema_webhook_request-0",
+              "cmdb_schema_x-a307mljaapl2",
+              "cmdb_schema_x-1xjckeovfjlrr",
+              "cmdb_schema_x-3cu4v1w20seby",
+              "cmdb_schema_x-16gddn9zkbt5z",
+              "cmdb_schema_x-2esgaekkrd1va",
+              "cmdb_schema_x-2v6829ff8z123",
+              "cmdb_schema_server_session_command_record-0",
+              "cmdb_schema_server_session-0"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        }
+      ],
+      "objects": [
+        "cmdb_u_jsonschema_config-2zcyer6c3hc4d",
+        "cmdb_u_jsonschema_config-27a431hkxf2of",
+        "cmdb_u_jsonschema_config-c87rc23kbck5",
+        "cmdb_u_jsonschema_config-38wsz29h5y70w",
+        "cmdb_u_jsonschema_config-2pcx1gcklywr5",
+        "cmdb_mpage-ma6qbeq117fj",
+        "cmdb_mpage-314iw7qw8vsc8",
+        "cmdb_mpage-37c5vospxvja6",
+        "cmdb_mpage-12j7utspido0w",
+        "cmdb_mpage-zv90hvu31enk",
+        "cmdb_view-2s2krkn83z7q",
+        "cmdb_mpage-20ie5cdobt8zo",
+        "cmdb_mpage-34sj4qvncu8hq",
+        "cmdb_mpage-31egrggcda6om",
+        "cmdb_mpage-2qib00a9qocc2",
+        "cmdb_mpage-3g1emzwqz491k",
+        "cmdb_mpage-e5l32lwcyl9d",
+        "cmdb_mpage-1l45czaovb9al",
+        "cmdb_mpage-3dfyqxxbe6jb2",
+        "cmdb_u_tree_config-ip8107cg1hu0",
+        "cmdb_u_jsonschema_config-1pj5plrh28291",
+        "cmdb_u_jsonschema_config-3ol6gicswsg1w",
+        "cmdb_ql-2zed3dyhzludy",
+        "cmdb_u_jsonschema_config-f9auk7b55gdi",
+        "cmdb_x-2dimdfrfpo0lw",
+        "cmdb_x-2nnm9fb735g8w",
+        "cmdb_x-1j3o1gk2ww2j1",
+        "cmdb_index-1gpcldf9motu9",
+        "cmdb_index-2x0obieq05eso",
+        "cmdb_object_ql-3jg26ossah60w",
+        "cmdb_ql-opg685mvv5pm",
+        "cmdb_workflow-1a7kg26z9zx03",
+        "cmdb_workflow-ejgwga005ejm",
+        "cmdb_workflow-x6yzfk9jc2eo",
+        "cmdb_workflow-10w31drnaf7l2",
+        "cmdb_x_u_jsonschema_config-0_default",
+        "cmdb_x-3g9yel3oalu49",
+        "cmdb_schema_u_jsonschema_config-0",
+        "cmdb_u_tree_config-2b9uuqdk6w81g",
+        "cmdb_x-28bl2kqrvf8xq",
+        "cmdb_x-3704cotq94n52",
+        "cmdb_x-fjqhnzpib1kw",
+        "cmdb_index-10mhkrmog5m92",
+        "cmdb_index-3m0ydjr9bbx9d",
+        "cmdb_object_ql-4b1hbwrw8py3",
+        "cmdb_ql-3d9man53w4lu6",
+        "cmdb_workflow-hp4egum3nct9",
+        "cmdb_workflow-1yirla1p6muih",
+        "cmdb_workflow-33a9dppf2ij69",
+        "cmdb_workflow-2xvyskqdrfpuo",
+        "cmdb_x_u_tree_config-0_default",
+        "cmdb_schema_u_tree_config-0",
+        "cmdb_x-2dx55vlrfasbr",
+        "cmdb_view-3nn08436um4qh",
+        "cmdb_mpage-okyb3pljbos9",
+        "cmdb_x-1y92p5sw67gf5",
+        "cmdb_workflow-2djixgq75rcmf",
+        "cmdb_workflow-141gcq4h5h7i9",
+        "cmdb_workflow-3qu911maqywh8"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".inode.schema_id",
+        ".inode.lock",
+        ".inode.mtime",
+        ".inode.last_editor"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": false
+  }
+}

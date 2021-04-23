@@ -1,0 +1,145 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-2atyqoe9ddgtd",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "查询资源模型关联模型配置默认数据包常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-ghkfn72ezw6k"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": ".indexes.cmdb_index-5idpkmb7eqne",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": "inode.schema_id",
+                "op": "=-",
+                "value": {
+                  "conditions": [
+                    {
+                      "field": ".inode.schema_id",
+                      "op": "=-",
+                      "value": [
+                        "cmdb_schema_schema_x-0"
+                      ]
+                    }
+                  ],
+                  "objects": [
+                    "cmdb_schema_x-schema"
+                  ],
+                  "sorts": [],
+                  "multi": true,
+                  "selects": [
+                    ".inode.name",
+                    ".inode.schema_id",
+                    ".inode.lock",
+                    ".inode.mtime",
+                    ".inode.last_editor"
+                  ],
+                  "comment": "",
+                  "function": "db",
+                  "vars": {}
+                }
+              },
+              {
+                "field": ".indexes.cmdb_index-1llredm1yz8zm",
+                "op": "=",
+                "value": "{var:vars.id}"
+              }
+            ],
+            "objects": [
+              "$conditions"
+            ],
+            "sorts": [],
+            "multi": false,
+            "selects": [
+              ". as ret"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": ".indexes.cmdb_index-3b01as46nc0b7",
+          "op": "=",
+          "value": true
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "multi": true,
+      "selects": [
+        ".data.object_id"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "资源模型ID"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

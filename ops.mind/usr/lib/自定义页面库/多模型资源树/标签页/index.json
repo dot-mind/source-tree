@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1zy82ihxfmqcl",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "标签页",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "padding": "24px",
+        "border": "1px solid #f0f0f0"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "166c0f41f2b5",
+        "name": "基本信息",
+        "icon": "chakan"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-25gxld6mi1ngq"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_tabs",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

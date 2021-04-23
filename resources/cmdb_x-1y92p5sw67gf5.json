@@ -1,0 +1,80 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1y92p5sw67gf5",
+    "schema_id": "cmdb_schema_x-xvbpbt1vit95",
+    "name": "测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "logo_link": "rocket",
+    "handler_config": {
+      "other_accounts": [],
+      "type": "account",
+      "roles": [],
+      "inherit": false
+    },
+    "input_schema": "{\"type\":\"object\",\"properties\":{\"[auto]4d5d0_input\":{\"type\":\"object\",\"properties\":{},\"required\":[],\"title\":\"输入\"}},\"title\":\"工单发起参数\"}",
+    "notify_config": {
+      "other_accounts": [],
+      "executor": false,
+      "type": "account",
+      "roles": [],
+      "inherit": false,
+      "workflow": null
+    },
+    "steps": [
+      {
+        "name": "自定义表单",
+        "uuid": "a926a",
+        "component_id": "cmdb_x-31lnzs7mc3lh0",
+        "config": {
+          "schema": "{\"type\":\"object\",\"properties\":{\"input\":{\"type\":\"object\",\"properties\":{},\"required\":[],\"title\":\"输入\"}},\"required\":[]}"
+        },
+        "input": {
+          "input": "$(ctx.input.[auto]4d5d0_input)"
+        },
+        "execute_policy": "continue",
+        "fail_policy": "stop",
+        "success_policy": "continue",
+        "set_vars": [
+          {
+            "var_path": "$(vars.[auto]a926a_output.input)",
+            "var_value": "$(output.input)"
+          }
+        ],
+        "premise": [],
+        "notify_config": {
+          "type": "account",
+          "roles": [],
+          "other_accounts": [],
+          "executor": null
+        },
+        "handler_config": {
+          "executor": null,
+          "type": "account",
+          "roles": [],
+          "other_accounts": []
+        }
+      }
+    ],
+    "su": null,
+    "vars_schema": "{\"type\":\"object\",\"properties\":{\"[auto]a926a_output\":{\"type\":\"object\",\"title\":\"自定义表单\",\"properties\":{\"input\":{\"type\":\"object\",\"properties\":{},\"required\":[],\"title\":\"输入\"}}}},\"title\":\"其它自定义参数\"}",
+    "workflows": {
+      "launcher": "cmdb_workflow-141gcq4h5h7i9",
+      "executor": "cmdb_workflow-2djixgq75rcmf",
+      "canceler": "cmdb_workflow-3qu911maqywh8"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1c8wfs912y3h0": "RESOURCE_OPERATE",
+    "cmdb_index-22sud7kvtxe7x": []
+  }
+}

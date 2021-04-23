@@ -1,0 +1,77 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-36gyse1ht5h3q",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "[多云运维管理][作业平台] 停止「脚本执行任务」",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_workflow-cx1kga65sxfk",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.input": "SEMI_EXPORTED",
+      "state.input.script_task_id": "FULL_EXPORTED",
+      "state.onFail": "SEMI_EXPORTED",
+      "state.onFail.0": "SEMI_EXPORTED",
+      "state.onFail.0.args": "FULL_EXPORTED",
+      "state.onFail.0.trigger": "FULL_EXPORTED",
+      "state.onFail.1": "NOT_EXPORTED",
+      "state.onFail.1.args": "NOT_EXPORTED",
+      "state.onFail.1.trigger": "NOT_EXPORTED",
+      "state.onSuccess": "SEMI_EXPORTED",
+      "state.onSuccess.0": "SEMI_EXPORTED",
+      "state.onSuccess.0.args": "FULL_EXPORTED",
+      "state.onSuccess.0.trigger": "FULL_EXPORTED",
+      "state.onSuccess.1": "SEMI_EXPORTED",
+      "state.onSuccess.1.args": "FULL_EXPORTED",
+      "state.onSuccess.1.trigger": "FULL_EXPORTED",
+      "state.output": "SEMI_EXPORTED",
+      "state.output.message": "FULL_EXPORTED",
+      "state.output.result": "FULL_EXPORTED",
+      "state.output.result_name": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {},
+      "input": {},
+      "onFail": [
+        {
+          "args": []
+        }
+      ],
+      "onSuccess": [
+        {
+          "args": []
+        },
+        {
+          "args": []
+        }
+      ],
+      "output": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

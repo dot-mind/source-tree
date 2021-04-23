@@ -1,0 +1,93 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_u_tree_config-0_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "资源树配置默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".data.treeData",
+        "show": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-hp4egum3nct9",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".data.treeData\"],\"enumNames\":[\"名称\",\"描述\",\"树数据\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".data.treeData\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"树数据\",\"properties\":{},\"required\":[]},\"title\":\"树数据\",\"ui:hidden\":\"{{ rootValue.field !== '.data.treeData' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-33a9dppf2ij69"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-1yirla1p6muih",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.treeData\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"树数据\",\"properties\":{},\"required\":[]},\"title\":\"树数据\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2xvyskqdrfpuo",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.treeData\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"树数据\",\"properties\":{},\"required\":[]},\"title\":\"树数据\"}},\"required\":[\".inode.name\"]}"
+    },
+    "ql": "cmdb_ql-3d9man53w4lu6",
+    "object_id": "cmdb_object_ql-4b1hbwrw8py3"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-2dx55vlrfasbr"
+  }
+}

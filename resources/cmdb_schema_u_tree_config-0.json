@@ -1,0 +1,37 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_tree_config-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "资源树配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "treeData": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "树数据",
+            "properties": {},
+            "required": []
+          },
+          "title": "树数据"
+        }
+      },
+      "required": []
+    },
+    "indexes": []
+  },
+  "indexes": {}
+}

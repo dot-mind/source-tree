@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3gp03ktdd0uu7",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "变量渲染",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.output": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.input_data.id": "FULL_EXPORTED",
+      "state.input_data": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"id\"}},\"required\":[]}",
+      "tpl": "${WEBSOCKET()}/v1/ecu/servers/${id}/shell/ws",
+      "input_data": {
+        "id": " "
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-34nsffz1yrnqp",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

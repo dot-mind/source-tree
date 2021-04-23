@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-lnalbc5jnlgv",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "按钮",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "background": "#fff1f0",
+        "border": "1px solid #ffa39e",
+        "color": "#f5222d",
+        "margin": "16px 0 0 0"
+      }
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "icon": "close-circle-fill",
+      "onClick": [],
+      "size": "large",
+      "text": "已关闭",
+      "type": "text"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

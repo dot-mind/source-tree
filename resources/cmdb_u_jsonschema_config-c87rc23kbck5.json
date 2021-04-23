@@ -1,0 +1,20 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_u_jsonschema_config-c87rc23kbck5",
+    "schema_id": "cmdb_schema_u_jsonschema_config-0",
+    "name": "Cloud",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-13jkh9mladf8s\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-23aoc0e133gg9\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"云账户\"},\".indexes.cmdb_index-3gqw0zgawfda1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2cbq8b0oqov2e\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"environment\"}}}"
+  },
+  "indexes": {}
+}

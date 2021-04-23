@@ -1,0 +1,77 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2xi96lxd2ywg5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "登录服务器对话框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "title": "登录远程服务器",
+      "width": 2000,
+      "footer": false,
+      "destroyOnClose": true,
+      "onOk": [],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.6e682d5154ed.state.url": "{var: children.832651490c49.state.output}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "6e682d5154ed"
+      },
+      {
+        "uuid": "832651490c49"
+      },
+      {
+        "uuid": "7cef2f0c666d"
+      },
+      {
+        "uuid": "1bf692d2aa6e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-29byzdaer964s",
+      "cmdb_mpage-3gp03ktdd0uu7",
+      "cmdb_mpage-1ud3fq8ld3at9",
+      "cmdb_mpage-27od9c0xtqztg"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-dialog",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

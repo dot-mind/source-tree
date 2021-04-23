@@ -1,0 +1,73 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1iq21w5r041fj",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "条件判断",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "case": "FINISHED",
+        "uuid": "4cd11435a798"
+      },
+      {
+        "case": "FAILED",
+        "uuid": "126bab2c80b5"
+      },
+      {
+        "case": "RUNNING",
+        "uuid": "9688a4b491f5"
+      },
+      {
+        "case": "WAITING",
+        "uuid": "c535503689d4"
+      },
+      {
+        "case": "SUCCEEDED",
+        "uuid": "22cad1cac130"
+      },
+      {
+        "case": "CANCELED",
+        "uuid": "f18eebfc8988"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "margin": "8px 0"
+      }
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.value": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-kitasam31xq3",
+      "cmdb_mpage-292z8jt2b701d",
+      "cmdb_mpage-15ew7xlijni4o",
+      "cmdb_mpage-16yessfhs34cf",
+      "cmdb_mpage-2vtgdz6eflu1m",
+      "cmdb_mpage-15014drxsljeo"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

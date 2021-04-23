@@ -1,0 +1,20 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_u_jsonschema_config-1pj5plrh28291",
+    "schema_id": "cmdb_schema_u_jsonschema_config-0",
+    "name": "Region",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-1l4scwvoccb5u\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2fuz8sxoztsz1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"region\"},\".indexes.cmdb_index-1hotvuqce4pxx\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2g16xbrrsdmb0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"cloud\"}}}"
+  },
+  "indexes": {}
+}

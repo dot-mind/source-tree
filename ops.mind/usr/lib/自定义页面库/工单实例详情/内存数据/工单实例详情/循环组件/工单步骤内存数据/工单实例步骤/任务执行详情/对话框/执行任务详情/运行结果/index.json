@@ -1,0 +1,37 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-ez3a63gxepej",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "运行结果",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "form_data": {},
+      "schema": "{\"type\":\"object\",\"properties\":{}}"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

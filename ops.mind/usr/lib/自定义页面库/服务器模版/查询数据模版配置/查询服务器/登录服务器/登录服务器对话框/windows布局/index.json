@@ -1,0 +1,58 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-27od9c0xtqztg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "windows布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "resId": ""
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.d3302d64ebe3.state.url": "{var: children.ac38ad70e123.state.output}",
+      "children.ac38ad70e123.state.input_data.id": "{var: children.d253c973ec03.state.vars.webshell_id}",
+      "children.61b7c83734a4.state.text": "{var: children.d253c973ec03.state.vars.webshell_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "d253c973ec03",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-26udrghguahin"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

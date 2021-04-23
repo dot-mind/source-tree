@@ -1,0 +1,99 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1e91zrqgs28b",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询服务器",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__trigger__.query": "FULL_EXPORTED",
+      "state.rowSelection": "SEMI_EXPORTED",
+      "state.rowSelection.objects": "FULL_EXPORTED",
+      "state.rowSelection.selected": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name.op": "FULL_EXPORTED",
+      "state.__vars__.vars.inode_name.value": "FULL_EXPORTED",
+      "state.workOrderList": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "conditions": true,
+      "fragment": false,
+      "update_allowed": true,
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "selected": true,
+        "multi": true,
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.b904c9f3f778.children.46f671da43cc.state.qlConfig.ql_id": "{var: config.resId}",
+      "children.b904c9f3f778.children.46f671da43cc.state.qlConfig.ql_input.conditions": "{var: state.conditionsConfig}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b904c9f3f778",
+        "index": 0,
+        "inserted": true,
+        "inserted_name": "操作"
+      },
+      {
+        "uuid": "a8df8c386e3d",
+        "index": 6,
+        "inserted": true,
+        "inserted_name": "Agent状态"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-spl7wp8e2ekz",
+      "cmdb_mpage-e6zox5kti0kq"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

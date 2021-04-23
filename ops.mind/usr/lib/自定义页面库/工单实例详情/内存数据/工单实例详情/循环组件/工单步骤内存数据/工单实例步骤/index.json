@@ -1,0 +1,130 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-29hza1vs32cem",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工单实例步骤",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.name": "FULL_EXPORTED",
+      "state.script_task_id": "FULL_EXPORTED",
+      "state.step_instance_id": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "0 0 10px 0",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "output": {
+        "input": {},
+        "output": {},
+        "result": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.066caa459677.state.onClick.0.trigger": "{var: children.c45ca5f111a4.children.f503c72072be.state.__trigger__.show}",
+      "children.c45ca5f111a4.children.f533b55f6539.children.77a68104dbee.state.form_data": "{var: state.output.input}",
+      "children.c45ca5f111a4.children.f533b55f6539.children.77a68104dbee.state.schema": "{var: state.output.input_schema}",
+      "children.c45ca5f111a4.children.998948dd6794.state.onClick.0.trigger": "{var: children.c45ca5f111a4.children.f503c72072be.state.__trigger__.show}",
+      "children.c45ca5f111a4.children.f503c72072be.children.e3cc1b45e940.state.form_data": "{var: state.output.output}",
+      "children.c45ca5f111a4.children.f503c72072be.children.e3cc1b45e940.state.schema": "{var: state.output.output_schema}",
+      "children.c45ca5f111a4.children.793c9bd6a02b.state.onClick.0.trigger": "{var: children.c45ca5f111a4.children.f533b55f6539.state.__trigger__.show}",
+      "children.24d244196ede.children.b60d106dafeb.children.56f1ea9ddfba.state.input.instance_id": "{var: state.step_instance_id}",
+      "children.24d244196ede.children.b60d106dafeb.children.0e6a4ab3d8a6.state.input.instance_id": "{var: state.step_instance_id}",
+      "children.24d244196ede.children.9863c9da06cc.children.fee78b3659b6.state.input.input": "{var: state.output.input}",
+      "children.24d244196ede.children.9863c9da06cc.children.fee78b3659b6.state.input.instance_id": "{var: state.step_instance_id}",
+      "children.24d244196ede.children.9863c9da06cc.children.e82b8463f5a8.state.input.instance_id": "{var: state.step_instance_id}",
+      "children.24d244196ede.children.9863c9da06cc.children.556601f59632.children.3ce6c53c2872.state.form_data": "{var: state.output.input}",
+      "children.24d244196ede.children.9863c9da06cc.children.556601f59632.children.3ce6c53c2872.state.schema": "{var: state.output.input_schema}",
+      "children.24d244196ede.state.value": "{var: state.task_state}",
+      "children.fcdf80f59572.state.onClick.0.trigger": "{var: children.c45ca5f111a4.children.f533b55f6539.state.__trigger__.show}",
+      "children.db6c144f0a51.state.onClick.0.trigger": "{var: children.48be68c877ef.state.__trigger__.show}",
+      "children.f6d4e09ae17f.children.3cba1be85391.children.5b883409753e.config.resId": "{var: state.workflow_job_id}",
+      "children.5b7c5e8e1335.children.e9536623d9f4.children.b267c93cf3f5.children.e307f04f1dc5.state.__lib__.job_id": "{var: state.script_task_id}",
+      "children.89733e22fae0.children.ca4cdb12c88d.children.7f63e240805a.children.f6d58ec88ea6.state.__lib__.id": "{var: state.ticket_instance_id}",
+      "children.ef6221081082.children.55547e5edae9.children.0cfc727aacef.children.4b6563afdaf9.state.__lib__.task_id": "{var: state.resource_operate_id}",
+      "children.5b7c5e8e1335.children.307ea2696eb9.state.click": "{var: state.script_task_id}",
+      "children.d61b6e7e196d.children.d4cafcbec61d.state.value": "{var: state.output.result.result}",
+      "children.d61b6e7e196d.children.e9424f056c38.state.message": "{var: state.output.result.result_name}",
+      "children.d61b6e7e196d.children.e9424f056c38.state.description": "{var: state.output.result.message}",
+      "children.d61b6e7e196d.children.b03e1aa5fc3a.children.dcafe1c00c69.state.message": "{var: state.output.result.result_name}",
+      "children.d61b6e7e196d.children.b03e1aa5fc3a.children.dcafe1c00c69.state.description": "{var: state.output.result.message}",
+      "children.5b7c5e8e1335.children.e9536623d9f4.children.b267c93cf3f5.children.e307f04f1dc5.state.__lib__.step_id": "{var: state.step_instance_id}",
+      "children.89733e22fae0.children.ca4cdb12c88d.children.7f63e240805a.children.f91e0e10b716.state.__lib__.id": "{var: state.ticket_instance_id}",
+      "children.5b7c5e8e1335.children.e9536623d9f4.children.7269967f07fc.state.__lib__.job_id": "{var: state.script_task_id}",
+      "children.5b7c5e8e1335.children.e9536623d9f4.children.7269967f07fc.state.__lib__.step_id": "{var: state.step_instance_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "24d244196ede"
+      },
+      {
+        "uuid": "fcdf80f59572"
+      },
+      {
+        "uuid": "066caa459677"
+      },
+      {
+        "uuid": "c45ca5f111a4"
+      },
+      {
+        "uuid": "5b7c5e8e1335"
+      },
+      {
+        "uuid": "f6d4e09ae17f"
+      },
+      {
+        "uuid": "ef6221081082"
+      },
+      {
+        "uuid": "89733e22fae0"
+      },
+      {
+        "uuid": "d61b6e7e196d"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3kt98kjhhu1xj",
+      "cmdb_mpage-2463dvxb0oa0q",
+      "cmdb_mpage-3mv4qmsd2eten",
+      "cmdb_mpage-3h16t4wrc0oj1",
+      "cmdb_mpage-3v5e48xohptmv",
+      "cmdb_mpage-1giox23tc1dbp",
+      "cmdb_mpage-1lwr4rp9a52f6",
+      "cmdb_mpage-10xag8xu5un72",
+      "cmdb_mpage-1c3n35h0rlsjl"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-3pik5h4ncwhs0",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

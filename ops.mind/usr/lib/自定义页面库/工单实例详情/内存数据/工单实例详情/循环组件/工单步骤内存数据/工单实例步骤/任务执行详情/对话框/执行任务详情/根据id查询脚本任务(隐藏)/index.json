@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3ala8w1q4ewse",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "根据id查询脚本任务(隐藏)",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_object_ql-2tgb3ye7q5q48",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__row__": "SEMI_EXPORTED",
+      "state.__row__.indexes.cmdb_index-3kyli9jj9w7ua": "FULL_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__.vars.id.value": "FULL_EXPORTED"
+    },
+    "state": {
+      "__row__": {},
+      "__trigger__": {},
+      "__vars__": {
+        "vars.id": {}
+      },
+      "onFail": [],
+      "onSuccess": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

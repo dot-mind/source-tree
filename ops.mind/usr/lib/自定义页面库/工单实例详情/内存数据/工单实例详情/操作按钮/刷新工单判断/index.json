@@ -1,0 +1,57 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1j2868ksxxru5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "刷新工单判断",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "case": "FINISHED",
+        "uuid": "4a8231aa739f"
+      },
+      {
+        "case": "CLOSED",
+        "uuid": "ad5eeb67ed7e"
+      },
+      {
+        "uuid": "63b14a2ff1b8"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "margin": "0 10px 0 0"
+      }
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.value": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-179qli1ieyoam",
+      "cmdb_mpage-3dmfh8p71o2k9",
+      "cmdb_mpage-1d6yukniv3aas"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

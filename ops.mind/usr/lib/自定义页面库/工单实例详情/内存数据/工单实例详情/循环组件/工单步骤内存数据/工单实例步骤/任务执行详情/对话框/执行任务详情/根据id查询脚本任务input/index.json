@@ -1,0 +1,53 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1g5nsdl25bxs2",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "根据id查询脚本任务input",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_object_ql-3tb4zddhjh1ms",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__row__": "SEMI_EXPORTED",
+      "state.__row__.data.input": "FULL_EXPORTED",
+      "state.__row__.indexes.cmdb_index-bqwuyoxmwrzv.data.input_schema": "FULL_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__.vars.id.value": "FULL_EXPORTED"
+    },
+    "state": {
+      "__row__": {
+        "data.input": {}
+      },
+      "__trigger__": {},
+      "__vars__": {
+        "vars.id": {}
+      },
+      "onFail": [],
+      "onSuccess": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

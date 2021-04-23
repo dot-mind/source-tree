@@ -1,0 +1,142 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-17fojo3lospyx",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "执行任务详情",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "0 10%",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"job_id\":{\"type\":\"string\",\"title\":\"脚本任务ID\"},\"step_id\":{\"type\":\"string\",\"title\":\"工单步骤ID\"}},\"required\":[],\"title\":\"暴露参数\"}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.03e47c3bb844.children.de8a5c2ed6a0.state.value": "{var: children.68b850f5e370.state.__row__.indexes.cmdb_index-3kyli9jj9w7ua}",
+      "children.05a3feed5bd8.state.__vars__.vars.id.value": "{var: state.__lib__.job_id}",
+      "children.c60f5453ff6e.state.form_data": "{var: children.3355de0d1cf1.state.__row__.data.input}",
+      "children.c60f5453ff6e.state.schema": "{var: children.3355de0d1cf1.state.__row__.indexes.cmdb_index-bqwuyoxmwrzv.data.input_schema}",
+      "children.77b601015f24.children.0222b7e8d535.state.onClick.trigger": "{var: state.__trigger__.refresh}",
+      "children.77b601015f24.children.ec15f419b6dd.children.2ca6596cff47.state.input.script_task_id": "{var: children.184b6c6a6f0f.state.__vars__.vars.id.value}",
+      "children.77b601015f24.children.d102d70ed24e.state.click": "{var: children.05a3feed5bd8.state.rowSelection.objects}",
+      "children.77b601015f24.children.d102d70ed24e.state.click.0": null,
+      "children.77b601015f24.children.5550d416d677.children.01b5e4155ce8.state.onClick.0.trigger": "{var: state.__trigger__.refresh}",
+      "children.77b601015f24.children.5550d416d677.children.01b5e4155ce8.state.onClick.trigger": "{var: state.__trigger__.refresh}",
+      "children.77b601015f24.children.5550d416d677.children.978e829d9d01.state.onClick.0.trigger": "{var: state.__trigger__.refresh}",
+      "children.77b601015f24.children.5550d416d677.children.978e829d9d01.state.onClick.trigger": "{var: state.__trigger__.refresh}",
+      "children.77b601015f24.children.5550d416d677.state.value": "{var: children.68b850f5e370.state.__row__.indexes.cmdb_index-3kyli9jj9w7ua}",
+      "children.77b601015f24.children.2f8d0028bedf.state.value": "{var: children.68b850f5e370.state.__row__.indexes.cmdb_index-3kyli9jj9w7ua}",
+      "children.77b601015f24.children.43c434be5ace.state.input.objects": "{var: children.05a3feed5bd8.state.rowSelection.objects}",
+      "children.77b601015f24.children.43c434be5ace.state.input.objects.0": null,
+      "children.77b601015f24.children.43c434be5ace.state.input.ql_id": "cmdb_ql-dnvy03n2vmm2",
+      "children.77b601015f24.children.43c434be5ace.state.input.task_id": "{var: state.__lib__.job_id}",
+      "children.77b601015f24.children.43c434be5ace.state.input.task_record_scope.objects": "{var: children.05a3feed5bd8.state.rowSelection.objects}",
+      "children.77b601015f24.children.43c434be5ace.state.input.task_record_scope.vars": "{var: children.05a3feed5bd8.state.__vars__}",
+      "children.77b601015f24.children.3096f7be58ff.children.b83ea4d0ee19.state.form_data": "{var: children.3355de0d1cf1.state.__row__.data.input}",
+      "children.77b601015f24.children.3096f7be58ff.children.b83ea4d0ee19.state.schema": "{var: children.3355de0d1cf1.state.__row__.indexes.cmdb_index-bqwuyoxmwrzv.data.input_schema}",
+      "children.68b850f5e370.state.__vars__.vars.id.value": "{var: state.__lib__.job_id}",
+      "children.184b6c6a6f0f.state.__vars__.vars.id.value": "{var: state.__lib__.job_id}",
+      "children.3355de0d1cf1.state.__vars__.vars.id.value": "{var: state.__lib__.job_id}",
+      "children.c3e8e7174f9d.state.options.key.id": "{var: state.__lib__.job_id}",
+      "children.c3e8e7174f9d.state.onMessage.0.trigger": "{var: children.05a3feed5bd8.state.__trigger__.query}",
+      "children.77b601015f24.children.43c434be5ace.state.input.step_id": "{var: state.__lib__.step_id}"
+    },
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "8eb0e16f4d13"
+      },
+      {
+        "md": 24,
+        "uuid": "03e47c3bb844"
+      },
+      {
+        "md": 24,
+        "uuid": "04014630e97b"
+      },
+      {
+        "md": 24,
+        "uuid": "184b6c6a6f0f"
+      },
+      {
+        "uuid": "68b850f5e370",
+        "md": 6
+      },
+      {
+        "md": 24,
+        "uuid": "3355de0d1cf1"
+      },
+      {
+        "md": 24,
+        "uuid": "0f3fcb1188df"
+      },
+      {
+        "md": 24,
+        "uuid": "77b601015f24"
+      },
+      {
+        "md": 24,
+        "uuid": "2fef32ae13f2"
+      },
+      {
+        "md": 24,
+        "uuid": "3fdd7c2559d8"
+      },
+      {
+        "md": 24,
+        "uuid": "05a3feed5bd8"
+      },
+      {
+        "uuid": "c3e8e7174f9d"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3i4p9d9x83kjl",
+      "cmdb_mpage-3pd6b8dm1dsbe",
+      "cmdb_mpage-28kv1dj99407p",
+      "cmdb_mpage-1b2rizoc38jig",
+      "cmdb_mpage-3ala8w1q4ewse",
+      "cmdb_mpage-1g5nsdl25bxs2",
+      "cmdb_mpage-22e6e9ykst8el",
+      "cmdb_mpage-2rvdet04yn3zu",
+      "cmdb_mpage-2dyx52unokgri",
+      "cmdb_mpage-ez3a63gxepej",
+      "cmdb_mpage-394zg0g23pcdx",
+      "cmdb_mpage-3vee77onhws6q"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

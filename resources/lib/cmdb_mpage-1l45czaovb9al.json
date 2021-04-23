@@ -1,0 +1,52 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1l45czaovb9al",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "配置资源树",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__lib__.view_list.0": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"选择资源树配置\",\"format\":\"ql-selector?id=cmdb_ql-3d9man53w4lu6\u0026select_mode=single\u0026spec=id\u0026widget=select\"},\"descr\":{\"type\":\"string\",\"ui:hidden\":true,\"default\":\"可显示配置资源树\"}},\"required\":[]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.81c6e557afcf.state.id": "{var: state.__lib__.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "81c6e557afcf",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-e5l32lwcyl9d"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

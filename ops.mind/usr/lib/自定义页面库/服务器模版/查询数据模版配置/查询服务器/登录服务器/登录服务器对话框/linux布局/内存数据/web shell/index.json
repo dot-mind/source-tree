@@ -1,0 +1,41 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2oddih44gvk39",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "web shell",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.url": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "hide": false,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "url": "wss://staging.private.opsmind.com/api/v1/ecu/servers/null/shell/ws?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJvcmciOiJwYTMxY2h1dG5iaWwiLCJvd25lciI6ImNtZGJfYWNjb3VudC12MTpmdWZhbmdoYW8iLCJncmFudHMiOm51bGwsInBhcmVudHMiOm51bGwsInZhbGlkX3RvIjoxNjAxNjA1MTY5LCJ2YWxpZF9mcm9tIjoxNTk5MDEzMTA5LCJncmFudGVlIjpudWxsLCJzYWx0IjoiZ3RvbHB0In0.AJHhBlSXaWFpMIgWQ99a44hXvsrn4A64_1vOvVhA2RiOBrrq4-UPpnkPhu1KB-rmWXoArD9emkt02drLmGpYnBQN1Ge-CImZSP_eDLEzHNUd7x2dBW6Z0yxlT5g30k6NG3OI-TFncT-vMKSgaWteYaUT5Me_TuN32Cbf1QPBiBs\u0026rows=50\u0026cols=150",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1aw89b8tz65ui",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

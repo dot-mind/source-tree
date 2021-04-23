@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1ud3fq8ld3at9",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "linux布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "hide": false,
+      "style": {
+        "margin": ""
+      },
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.4a292527ce29.state.url": "{var: children.458a5595ca1d.state.output}",
+      "children.458a5595ca1d.state.input_data.id": "{var: children.9966a0ef7cce.state.vars.webshell_id}",
+      "children.40d197f9cd1b.state.text": "{var: children.9966a0ef7cce.state.vars.webshell_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "9966a0ef7cce",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-25iw5z2ee0bns"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}
