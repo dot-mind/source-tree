@@ -31,7 +31,7 @@
       }
     },
     "state": {
-      "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"选择资源树\",\"ui:width\":\"50%\",\"format\":\"ql-selector?id=cmdb_ql-3d9man53w4lu6\u0026select_mode=single\u0026spec=id\u0026widget=select\"},\"adminMode\":{\"type\":\"boolean\",\"title\":\"开启管理员\",\"ui:width\":\"50%\"}},\"required\":[]}",
+      "schema": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\",\"title\":\"选择资源树\",\"ui:width\":\"50%\",\"format\":\"ql-selector?id=cmdb_ql-3d9man53w4lu6\u0026select_mode=single\u0026spec=id\u0026widget=select\"},\"adminMode\":{\"type\":\"boolean\",\"title\":\"开启管理员\",\"ui:width\":\"50%\",\"ui:widget\":\"switch\"}},\"required\":[]}",
       "form_data": {}
     },
     "children": {},
