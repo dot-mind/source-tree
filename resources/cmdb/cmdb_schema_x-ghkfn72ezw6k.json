@@ -1,0 +1,232 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_x-ghkfn72ezw6k",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "数据模板模型",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "required": [
+        "conditions",
+        "selects",
+        "vars",
+        "advanced",
+        "editable"
+      ],
+      "properties": {
+        "conditions": {
+          "items": {
+            "properties": {},
+            "type": "object"
+          },
+          "type": "array",
+          "title": "内部约束"
+        },
+        "vars": {
+          "items": {
+            "properties": {},
+            "type": "object"
+          },
+          "type": "array",
+          "title": "筛选条件"
+        },
+        "selects": {
+          "items": {
+            "required": [
+              "field"
+            ],
+            "properties": {
+              "field": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array",
+          "title": "字段筛选"
+        },
+        "ql": {
+          "type": "string",
+          "title": "生成的常用查询"
+        },
+        "mpage": {
+          "properties": {
+            "detail_page": {
+              "type": "string",
+              "title": "详情页ID"
+            },
+            "detail_uuid": {
+              "type": "string",
+              "title": "详情页uuid"
+            },
+            "list_page": {
+              "type": "string",
+              "title": "列表页ID"
+            },
+            "list_uuid": {
+              "type": "string",
+              "title": "列表页uuid"
+            },
+            "tabs_id": {
+              "type": "string",
+              "title": "标签页ID"
+            },
+            "navs_id": {
+              "type": "string",
+              "title": "子导航ID"
+            },
+            "navs_uuid": {
+              "type": "string",
+              "title": "子导航uuid"
+            }
+          },
+          "type": "object",
+          "title": "数据模板关联的页面"
+        },
+        "object_id": {
+          "type": "string",
+          "title": "常用对象查询"
+        },
+        "forms": {
+          "items": {
+            "required": [
+              "field",
+              "ui_status"
+            ],
+            "properties": {
+              "field": {
+                "type": "string",
+                "title": "字段"
+              },
+              "default": {
+                "type": "string",
+                "title": "默认值"
+              },
+              "pkg_id": {
+                "type": "string"
+              },
+              "widget": {
+                "type": "string"
+              },
+              "ui_status": {
+                "enum": [
+                  "readonly",
+                  "hide",
+                  "show"
+                ],
+                "type": "string",
+                "title": "ui状态",
+                "default": "show"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array",
+          "title": "对象表单"
+        },
+        "advanced": {
+          "type": "boolean",
+          "title": "高级模式",
+          "default": false
+        },
+        "content": {
+          "type": "string",
+          "title": "高级模型常用查询"
+        },
+        "new_data": {
+          "required": [
+            "wf_id",
+            "data"
+          ],
+          "properties": {
+            "wf_id": {
+              "type": "string",
+              "title": "工作流"
+            },
+            "data": {
+              "type": "string",
+              "title": "schema字符串"
+            }
+          },
+          "type": "object"
+        },
+        "edit_data": {
+          "required": [
+            "wf_id",
+            "data"
+          ],
+          "properties": {
+            "wf_id": {
+              "type": "string",
+              "title": "工作流"
+            },
+            "data": {
+              "type": "string",
+              "title": "schema字符串"
+            }
+          },
+          "type": "object"
+        },
+        "batch_edit_data": {
+          "required": [
+            "wf_id",
+            "data"
+          ],
+          "properties": {
+            "wf_id": {
+              "type": "string",
+              "title": "工作流"
+            },
+            "data": {
+              "type": "string",
+              "title": "schema字符串"
+            }
+          },
+          "type": "object"
+        },
+        "delete_data": {
+          "properties": {
+            "wf_id": {
+              "type": "string",
+              "title": "工作流"
+            }
+          },
+          "type": "object"
+        },
+        "editable": {
+          "type": "boolean",
+          "title": "是否可编辑"
+        }
+      },
+      "type": "object"
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-5idpkmb7eqne",
+        "key": "",
+        "required": true,
+        "read_only": false
+      },
+      {
+        "id": "cmdb_index-3b01as46nc0b7",
+        "key": "",
+        "required": false,
+        "read_only": false
+      }
+    ],
+    "links": null
+  },
+  "indexes": {}
+}

@@ -63,11 +63,10 @@
         }
       ],
       "objects": [
-        "cmdb_u_jsonschema_config-2zcyer6c3hc4d",
-        "cmdb_u_jsonschema_config-27a431hkxf2of",
-        "cmdb_u_jsonschema_config-c87rc23kbck5",
-        "cmdb_u_jsonschema_config-38wsz29h5y70w",
-        "cmdb_u_jsonschema_config-2pcx1gcklywr5",
+        "cmdb_mpage-bw5rqpww94q3",
+        "cmdb_mpage-3pe6sr7inczsk",
+        "cmdb_schema_view-0",
+        "cmdb_schema_x-ghkfn72ezw6k",
         "cmdb_mpage-ma6qbeq117fj",
         "cmdb_mpage-314iw7qw8vsc8",
         "cmdb_mpage-37c5vospxvja6",

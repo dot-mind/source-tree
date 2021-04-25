@@ -1,0 +1,59 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3tgniofkvm0w0",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "标签页",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "ddfd2ecd7f26",
+        "name": "资源树管理",
+        "icon": null
+      },
+      {
+        "uuid": "4cae591875ce",
+        "name": "树配置管理",
+        "icon": null
+      },
+      {
+        "uuid": "0327007bf9f4",
+        "name": "表单配置",
+        "icon": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1pxu1yn3hm0de",
+      "cmdb_mpage-hq0mm1vttwc5",
+      "cmdb_mpage-1pntl05r3xeyu"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_tabs",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

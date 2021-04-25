@@ -1,10 +1,10 @@
 {
   "inode": {
     "org": "",
-    "id": "cmdb_mpage-root",
+    "id": "cmdb_mpage-239e9kzkz8ugm",
     "schema_id": "cmdb_schema_mpage-1",
-    "name": "ops.mind",
-    "namespace": "/m.js",
+    "name": "app",
+    "namespace": "",
     "descr": "",
     "ctime": 0,
     "mtime": 0,
@@ -14,11 +14,7 @@
     "lock": ""
   },
   "data": {
-    "publics": {
-      "state.path.1": "NOT_EXPORTED",
-      "config.mind.children.0": "NOT_EXPORTED",
-      "config.mind.children.1": "NOT_EXPORTED"
-    },
+    "publics": {},
     "config": {
       "autoRefreshInterval": 0,
       "cmdbCache": "R+W+",
@@ -37,42 +33,25 @@
       },
       "mind": {
         "children": [
-          "cmdb_mpage-infz0if4d6ir",
-          "cmdb_mpage-3fkl2i5f04ttb",
-          "cmdb_mpage-gfd5hncjcyu9"
-        ],
-        "locked": true
+          "cmdb_mpage-1tj7nfaz5oqyx"
+        ]
       }
     },
     "state": {
-      "title": "ops.mind",
-      "describe": "ops.mind主入口",
-      "path": [],
-      "state": {
-        "children": []
-      },
       "__trigger__": {}
     },
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "295d6d87d9bd"
-      },
-      {
-        "uuid": "e6a37f5f14ae"
-      },
-      {
-        "uuid": "3e3de08e119b"
+        "uuid": "c75d681a7277"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-infz0if4d6ir",
-      "cmdb_mpage-3fkl2i5f04ttb",
-      "cmdb_mpage-gfd5hncjcyu9"
+      "cmdb_mpage-1tj7nfaz5oqyx"
     ],
-    "cmdb_index-mpage_component": "cmdb_mcomponent-3o666587lf9r3",
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24bkg33jlyp6f",
     "cmdb_index-mpage_component_type": "UNKNOWN"
   }
 }

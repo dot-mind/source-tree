@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_u_jsonschema_config-1pj5plrh28291",
     "schema_id": "cmdb_schema_u_jsonschema_config-0",
-    "name": "Region",
+    "name": "Clound表单",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -14,7 +14,7 @@
     "lock": ""
   },
   "data": {
-    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-1l4scwvoccb5u\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2fuz8sxoztsz1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"region\"},\".indexes.cmdb_index-1hotvuqce4pxx\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2g16xbrrsdmb0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"cloud\"}}}"
+    "schema": "{\"type\":\"object\",\"properties\":{\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-1l4scwvoccb5u\":{\"type\":\"string\",\"title\":\"region\",\"format\":\"ql-selector?id=cmdb_ql-2fuz8sxoztsz1\u0026select_mode=single\u0026spec=id\u0026widget=table\"},\".indexes.cmdb_index-1g302j2psvvd1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-a7bah0a3iocz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"可用区\"},\".indexes.cmdb_index-1yhey410ex3f2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"vpc\"}},\"required\":[]}"
   },
   "indexes": {}
 }

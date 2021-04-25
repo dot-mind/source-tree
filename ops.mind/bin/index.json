@@ -1,0 +1,57 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3fkl2i5f04ttb",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "bin",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "config.mind.upgrade_ignore.0": "NOT_EXPORTED",
+      "config.mind.children.0": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": [
+          "cmdb_mpage-239e9kzkz8ugm"
+        ],
+        "locked": true
+      }
+    },
+    "state": {
+      "title": "bin",
+      "describe": "用于组织 dotMind 中所有体现功能的配置对象，例如用于支撑 CMP 自身功能的 MPage、Workflow、Schema、Index、QL",
+      "path": [],
+      "state": {
+        "children": []
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "edf79bf5e83c"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-239e9kzkz8ugm"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-3o666587lf9r3",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

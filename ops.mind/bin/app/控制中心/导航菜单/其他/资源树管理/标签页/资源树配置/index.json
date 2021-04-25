@@ -1,0 +1,41 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-hq0mm1vttwc5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "资源树配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_mpage-3pe6sr7inczsk",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.24bdb3615a4b.state.__lib__.view_id": "cmdb_view-3laiwsbp9624m"
+    },
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}
