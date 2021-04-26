@@ -17,7 +17,8 @@
     "publics": {
       "state.adminMode": "FULL_EXPORTED",
       "state": "SEMI_EXPORTED",
-      "state.id": "FULL_EXPORTED"
+      "state.id": "FULL_EXPORTED",
+      "state.selected_id": "FULL_EXPORTED"
     },
     "config": {
       "resId": "",
@@ -30,7 +31,6 @@
       }
     },
     "state": {
-      "data": [],
       "__trigger__": {}
     },
     "children": {},
