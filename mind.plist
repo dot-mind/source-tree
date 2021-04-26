@@ -108,11 +108,6 @@
       "parent": "cmdb_mpage-1l45czaovb9al"
     },
     {
-      "file": "resources/cmdb/cmdb_schema_x-ghkfn72ezw6k.json",
-      "id": "cmdb_schema_x-ghkfn72ezw6k",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_index-10mhkrmog5m92.json",
       "id": "cmdb_index-10mhkrmog5m92",
       "parent": ""
@@ -143,38 +138,13 @@
       "parent": ""
     },
     {
-      "file": "resources/cmdb_mpage-2qib00a9qocc2.json",
-      "id": "cmdb_mpage-2qib00a9qocc2",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_mpage-314iw7qw8vsc8.json",
       "id": "cmdb_mpage-314iw7qw8vsc8",
       "parent": ""
     },
     {
-      "file": "resources/cmdb_mpage-31egrggcda6om.json",
-      "id": "cmdb_mpage-31egrggcda6om",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_mpage-34sj4qvncu8hq.json",
-      "id": "cmdb_mpage-34sj4qvncu8hq",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_mpage-37c5vospxvja6.json",
       "id": "cmdb_mpage-37c5vospxvja6",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_mpage-3dfyqxxbe6jb2.json",
-      "id": "cmdb_mpage-3dfyqxxbe6jb2",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_mpage-3g1emzwqz491k.json",
-      "id": "cmdb_mpage-3g1emzwqz491k",
       "parent": ""
     },
     {
@@ -198,11 +168,6 @@
       "parent": ""
     },
     {
-      "file": "resources/cmdb_mpage-okyb3pljbos9.json",
-      "id": "cmdb_mpage-okyb3pljbos9",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_mpage-zv90hvu31enk.json",
       "id": "cmdb_mpage-zv90hvu31enk",
       "parent": ""
@@ -223,28 +188,13 @@
       "parent": ""
     },
     {
-      "file": "resources/cmdb_u_jsonschema_config-1pj5plrh28291.json",
-      "id": "cmdb_u_jsonschema_config-1pj5plrh28291",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_view-2s2krkn83z7q.json",
       "id": "cmdb_view-2s2krkn83z7q",
       "parent": ""
     },
     {
-      "file": "resources/cmdb_view-3nn08436um4qh.json",
-      "id": "cmdb_view-3nn08436um4qh",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_workflow-10w31drnaf7l2.json",
       "id": "cmdb_workflow-10w31drnaf7l2",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_workflow-141gcq4h5h7i9.json",
-      "id": "cmdb_workflow-141gcq4h5h7i9",
       "parent": ""
     },
     {
@@ -258,11 +208,6 @@
       "parent": ""
     },
     {
-      "file": "resources/cmdb_workflow-2djixgq75rcmf.json",
-      "id": "cmdb_workflow-2djixgq75rcmf",
-      "parent": ""
-    },
-    {
       "file": "resources/cmdb_workflow-2xvyskqdrfpuo.json",
       "id": "cmdb_workflow-2xvyskqdrfpuo",
       "parent": ""
@@ -270,11 +215,6 @@
     {
       "file": "resources/cmdb_workflow-33a9dppf2ij69.json",
       "id": "cmdb_workflow-33a9dppf2ij69",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_workflow-3qu911maqywh8.json",
-      "id": "cmdb_workflow-3qu911maqywh8",
       "parent": ""
     },
     {
@@ -295,11 +235,6 @@
     {
       "file": "resources/cmdb_x-1j3o1gk2ww2j1.json",
       "id": "cmdb_x-1j3o1gk2ww2j1",
-      "parent": ""
-    },
-    {
-      "file": "resources/cmdb_x-1y92p5sw67gf5.json",
-      "id": "cmdb_x-1y92p5sw67gf5",
       "parent": ""
     },
     {
@@ -373,22 +308,7 @@
       "parent": "cmdb_mpage-229tk9jocs2fq"
     },
     {
-      "file": "resources/preferences/cmdb_schema_view-0.json",
-      "id": "cmdb_schema_view-0",
-      "parent": ""
-    },
-    {
       "file": "resources/scripts/cmdb_workflow-10w31drnaf7l2.data.nodes.2.config.script.js",
-      "id": "",
-      "parent": ""
-    },
-    {
-      "file": "resources/scripts/cmdb_workflow-141gcq4h5h7i9.data.nodes.1.config.script.js",
-      "id": "",
-      "parent": ""
-    },
-    {
-      "file": "resources/scripts/cmdb_workflow-141gcq4h5h7i9.data.nodes.4.config.script.js",
       "id": "",
       "parent": ""
     },
@@ -403,22 +323,12 @@
       "parent": ""
     },
     {
-      "file": "resources/scripts/cmdb_workflow-2djixgq75rcmf.data.nodes.2.config.script.js",
-      "id": "",
-      "parent": ""
-    },
-    {
       "file": "resources/scripts/cmdb_workflow-2xvyskqdrfpuo.data.nodes.2.config.script.js",
       "id": "",
       "parent": ""
     },
     {
       "file": "resources/scripts/cmdb_workflow-33a9dppf2ij69.data.nodes.2.config.script.js",
-      "id": "",
-      "parent": ""
-    },
-    {
-      "file": "resources/scripts/cmdb_workflow-3qu911maqywh8.data.nodes.1.config.script.js",
       "id": "",
       "parent": ""
     },
