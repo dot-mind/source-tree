@@ -1,0 +1,42 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1fkcv4j6affrc",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "警告提示",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "resId": ""
+    },
+    "publics": {
+      "config": "SEMI_EXPORTED"
+    },
+    "state": {
+      "showIcon": true,
+      "type": "warning",
+      "__trigger__": {},
+      "description": "是否进行归档操作？归档成功后，若需恢复数据，请联系系统管理员。",
+      "message": "注意："
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_alert",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

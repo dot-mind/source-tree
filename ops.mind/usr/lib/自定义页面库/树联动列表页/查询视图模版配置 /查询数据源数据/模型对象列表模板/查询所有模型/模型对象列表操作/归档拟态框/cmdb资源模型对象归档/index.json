@@ -1,0 +1,105 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1w7imq5akkcjm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "cmdb资源模型对象归档",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "config.resId": "FULL_EXPORTED",
+      "state.aborted": "FULL_EXPORTED",
+      "state.input": "SEMI_EXPORTED",
+      "state.onFail": "FULL_EXPORTED",
+      "state.onSuccess.0.args": "FULL_EXPORTED",
+      "state.output.message": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.onSuccess.1": "FULL_EXPORTED",
+      "state.input.idList": "FULL_EXPORTED",
+      "state.onFail.0.trigger": "FULL_EXPORTED",
+      "state.onSuccess.2.trigger": "FULL_EXPORTED",
+      "state.output.output": "SEMI_EXPORTED",
+      "state.output.output.update_count": "FULL_EXPORTED",
+      "state.runtime_error": "FULL_EXPORTED",
+      "state.onSuccess": "FULL_EXPORTED",
+      "state.onSuccess.1.args": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.input.idList.0": "FULL_EXPORTED",
+      "state.input.ids.0": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.input.ids": "FULL_EXPORTED",
+      "state.onSuccess.1.trigger": "FULL_EXPORTED",
+      "state.onSuccess.2": "FULL_EXPORTED",
+      "state.output": "SEMI_EXPORTED",
+      "state.output.result_name": "FULL_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.onFail.0": "FULL_EXPORTED",
+      "state.output.output.failed_count": "FULL_EXPORTED",
+      "state.output.result": "FULL_EXPORTED",
+      "state.outputSchema": "FULL_EXPORTED",
+      "state.inputSchema": "FULL_EXPORTED",
+      "state.onFail.0.args": "FULL_EXPORTED",
+      "state.onSuccess.0": "FULL_EXPORTED",
+      "state.onSuccess.0.trigger": "FULL_EXPORTED",
+      "state.onSuccess.2.args": "FULL_EXPORTED",
+      "state.running": "FULL_EXPORTED",
+      "state.onSuccess.3": "FULL_EXPORTED",
+      "state.onSuccess.3.trigger": "FULL_EXPORTED",
+      "state.onSuccess.3.args": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "onSuccess": [
+        {
+          "args": []
+        },
+        {
+          "args": []
+        },
+        {
+          "args": []
+        },
+        {
+          "args": []
+        }
+      ],
+      "onFail": [
+        {
+          "args": []
+        }
+      ],
+      "input": {
+        "ids": [
+          ""
+        ]
+      },
+      "output": {
+        "output": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

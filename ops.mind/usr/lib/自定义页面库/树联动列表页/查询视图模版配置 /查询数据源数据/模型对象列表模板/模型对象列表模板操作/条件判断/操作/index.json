@@ -1,0 +1,116 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3tig25up9iph0",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.onClick": "SEMI_EXPORTED",
+      "state.onClick.0": "SEMI_EXPORTED",
+      "state.onClick.0.args": "FULL_EXPORTED",
+      "state.onClick.0.trigger": "FULL_EXPORTED",
+      "state.onClick.1": "SEMI_EXPORTED",
+      "state.onClick.1.trigger": "FULL_EXPORTED",
+      "state.onClick.1.args": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "0 0 0 10px",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "text": "新建",
+      "icon": "plus",
+      "size": "middle",
+      "type": null,
+      "onClick": [
+        {
+          "trigger": "{var: children.12f1acf8c759.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.07567d496e25.state.onClick.0.trigger": "{var: children.d5ccaa0fff80.state.__trigger__.exoprtCsv}",
+      "children.70bf748e49c2.state.onClick.0.trigger": "{var: children.d52ddb997c9f.state.__trigger__.show}",
+      "children.5c53695c3b5b.state.onClick.0.trigger": "{var: children.12f1acf8c759.state.__trigger__.createWfJob}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "5c53695c3b5b",
+        "uf8e2e43d68d": "uf8e2e43d68d"
+      },
+      {
+        "uuid": "c859bce407b5",
+        "u06293b98903": "u06293b98903"
+      },
+      {
+        "uuid": "5f1ff8372f2d",
+        "u67a1a34e4ce": "u67a1a34e4ce"
+      },
+      {
+        "uuid": "d5ccaa0fff80",
+        "u1b3b4d9bd6a": "u1b3b4d9bd6a"
+      },
+      {
+        "uuid": "07567d496e25",
+        "ucd5047d86e8": "ucd5047d86e8"
+      },
+      {
+        "uuid": "70bf748e49c2"
+      },
+      {
+        "uuid": "cdbad8081fef"
+      },
+      {
+        "uuid": "d52ddb997c9f"
+      },
+      {
+        "uuid": "12f1acf8c759"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-y1u74w4ch1mr",
+      "cmdb_mpage-2zzb69wd8lx31",
+      "cmdb_mpage-8c1zqffblzp8",
+      "cmdb_mpage-1pl48l12ja2a9",
+      "cmdb_mpage-28biyv1xo0xva",
+      "cmdb_mpage-23g7z9igax36u",
+      "cmdb_mpage-1qy3q2fnffqsx",
+      "cmdb_mpage-1qlp2y5fbayd",
+      "cmdb_mpage-3cegjov5hpi8h"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

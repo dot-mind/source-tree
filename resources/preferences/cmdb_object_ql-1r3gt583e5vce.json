@@ -1,0 +1,74 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-1r3gt583e5vce",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "查询数据源数据",
+    "namespace": "/preferences",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-ghkfn72ezw6k"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 1,
+      "offset": 0,
+      "multi": false,
+      "selects": [
+        ".data.ql",
+        ".data.object_id",
+        ".data.new_data",
+        ".data.edit_data",
+        ".data.batch_edit_data",
+        ".data.delete_data",
+        ".data.editable",
+        ".indexes.cmdb_index-5idpkmb7eqne.inode.id as 模型配置ID"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

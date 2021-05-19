@@ -1,9 +1,9 @@
 {
   "inode": {
     "org": "",
-    "id": "cmdb_mpage-229tk9jocs2fq",
+    "id": "cmdb_mpage-3gti16btnua78",
     "schema_id": "cmdb_schema_mpage-1",
-    "name": "自定义页面库",
+    "name": "是否可新建编辑",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -14,18 +14,15 @@
     "lock": ""
   },
   "data": {
-    "publics": {},
+    "publics": {
+      "state.value": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
     "config": {
       "resId": "",
       "style": {},
       "jump": {
         "vars": []
-      },
-      "mind": {
-        "children": [
-          "cmdb_mpage-1l45czaovb9al",
-          "cmdb_mpage-122qbrng3sduj"
-        ]
       }
     },
     "state": {
@@ -34,19 +31,17 @@
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "50169bca340a"
-      },
-      {
-        "uuid": "1726dceaed04"
+        "uuid": "3b12d42959cc",
+        "case": "true",
+        "u8b2a3a43710": "u8b2a3a43710"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-1l45czaovb9al",
-      "cmdb_mpage-122qbrng3sduj"
+      "cmdb_mpage-3am5km42orkzv"
     ],
-    "cmdb_index-mpage_component": "cmdb_mcomponent-unknown",
-    "cmdb_index-mpage_component_type": "UNKNOWN"
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
   }
 }

@@ -1,0 +1,276 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3qdn0a6p1yuf0",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "云服务器常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_server-0"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_related_logicRes",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_imageid",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_subnet",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_cloud_resource_config",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_cloud_account",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_vpc",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_system_disk",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_cloud_resource_config",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_data_disks",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
+        },
+        {
+          "field": "vars.indexes_cloud",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.inode_namespace",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-zy5o5ad8hhh7",
+                  "op": "=",
+                  "value": "{var:vars.indexes_related_logicRes}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-1yam7nytu0lzp",
+                  "op": "=",
+                  "value": "{var:vars.indexes_imageid}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-3bxtoukdedsor",
+                  "op": "=",
+                  "value": "{var:vars.indexes_subnet}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_resource_config",
+                  "op": "=",
+                  "value": "{var:vars.indexes_cloud_resource_config}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_account",
+                  "op": "=",
+                  "value": "{var:vars.indexes_cloud_account}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-1yhey410ex3f2",
+                  "op": "=",
+                  "value": "{var:vars.indexes_vpc}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-3ly0jzx6ccciz",
+                  "op": "=",
+                  "value": "{var:vars.indexes_system_disk}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_resource_config",
+                  "op": "=",
+                  "value": "{var:vars.indexes_cloud_resource_config}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-25d3b7mowaj2c",
+                  "op": "=",
+                  "value": "{var:vars.indexes_data_disks}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-vendor",
+                  "op": "=",
+                  "value": "{var:vars.indexes_cloud}"
+                },
+                {
+                  "field": ".inode.namespace",
+                  "op": "=",
+                  "value": "{var:vars.inode_namespace}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".data.Tags.TagKey as TagKey",
+        ".data.Tags.TagValue as TagValue",
+        ".indexes.cmdb_index-zy5o5ad8hhh7 as 关联到logicRes",
+        ".indexes.cmdb_index-1yam7nytu0lzp as 镜像",
+        ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
+        ".indexes.cmdb_index-cloud_resource_config as 关联云资源配置",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-26lrotpomsf9d as 关联云服务",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
+        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
+        ".data.memory as 内存",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
+        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
+        ".data.cpu as CPU核数",
+        ".indexes.cmdb_index-39833o1pvvbm7 as OS",
+        ".indexes.cmdb_index-external_id as 唯一ID",
+        ".indexes.cmdb_index-3ly0jzx6ccciz as 系统盘",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-cloud_resource_config as 所属云资源配置",
+        ".indexes.cmdb_index-25d3b7mowaj2c as 关联数据盘",
+        ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
+        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
+        ".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态",
+        ".indexes.cmdb_index-vendor as 所属供应商",
+        ".inode.mtime as 最后修改时间",
+        ".inode.last_editor as 最后修改者"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_related_logicRes": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-1om6c0q202udi\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联到logicRes"
+              },
+              "indexes_imageid": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-3jdvwh6ek90nx\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "镜像"
+              },
+              "indexes_subnet": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "虚拟交换机"
+              },
+              "indexes_cloud_resource_config": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-1bt7d5uaigw26\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "所属云资源配置"
+              },
+              "indexes_cloud_account": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-23aoc0e133gg9\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              },
+              "indexes_vpc": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "VPC"
+              },
+              "indexes_system_disk": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-27h0eudlvmbpm\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "系统盘"
+              },
+              "indexes_data_disks": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "format": "ql-selector?id=cmdb_ql-27h0eudlvmbpm\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "title": "关联数据盘",
+                "default": []
+              },
+              "indexes_cloud": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-1pyyhflarq2cf\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "所属供应商"
+              },
+              "inode_namespace": {
+                "type": "string",
+                "title": "名字空间",
+                "ui:readonly": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2l9w6qz1vu5e1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "按钮",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {
+      "state.onClick": "SEMI_EXPORTED",
+      "state.onClick.0": "SEMI_EXPORTED",
+      "state.onClick.0.args": "FULL_EXPORTED",
+      "state.onClick.0.trigger": "FULL_EXPORTED",
+      "state.text": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "state": {
+      "onClick": [
+        {
+          "args": []
+        }
+      ],
+      "type": "text",
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

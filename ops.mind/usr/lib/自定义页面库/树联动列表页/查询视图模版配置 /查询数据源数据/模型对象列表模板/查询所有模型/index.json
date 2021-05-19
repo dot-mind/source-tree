@@ -1,0 +1,797 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-mq1u1zpi42rl",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询所有模型",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__trigger__.query": "FULL_EXPORTED",
+      "state.rowSelection": "SEMI_EXPORTED",
+      "state.rowSelection.objects": "FULL_EXPORTED",
+      "state.rowSelection.selected": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name.op": "FULL_EXPORTED",
+      "state.__vars__.vars.inode_name.value": "FULL_EXPORTED",
+      "state.__trigger__.resetSelected": "FULL_EXPORTED",
+      "state.__table_data__.inode.name": "SEMI_EXPORTED",
+      "state.__table_data__": "SEMI_EXPORTED",
+      "state.__table_data__.inode.name.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.hidden": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.inode.name.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.schema": "FULL_EXPORTED",
+      "state.__table_data__.inode.name.data": "SEMI_EXPORTED",
+      "state.__table_data__.inode.name.data.0": "FULL_EXPORTED",
+      "state.__table_data__.inode.id": "SEMI_EXPORTED",
+      "state.__table_data__.inode.id.schema": "FULL_EXPORTED",
+      "state.__table_data__.inode.id.data": "SEMI_EXPORTED",
+      "state.__table_data__.inode.id.data.0": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.hidden": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.schema": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.data": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-2ab1d4vy5n8sl.data.0": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.hidden": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.schema": "FULL_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.data": "SEMI_EXPORTED",
+      "state.__table_data__.indexes.cmdb_index-4h86vivkg96s.data.0": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood": "SEMI_EXPORTED",
+      "state.__table_data__.data.isgood.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.hidden": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.data.isgood.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.schema": "FULL_EXPORTED",
+      "state.__table_data__.data.isgood.data": "SEMI_EXPORTED",
+      "state.__table_data__.data.isgood.data.0": "FULL_EXPORTED",
+      "state.__table_data__.data.number": "SEMI_EXPORTED",
+      "state.__table_data__.data.number.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.number.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.number.hidden": "FULL_EXPORTED",
+      "state.__table_data__.data.number.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.data.number.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.data.number.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.data.number.schema": "FULL_EXPORTED",
+      "state.__table_data__.data.number.data": "SEMI_EXPORTED",
+      "state.__table_data__.data.number.data.0": "FULL_EXPORTED",
+      "state.__table_data__.data.logo": "SEMI_EXPORTED",
+      "state.__table_data__.data.logo.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.hidden": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.data.logo.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.schema": "FULL_EXPORTED",
+      "state.__table_data__.data.logo.data": "SEMI_EXPORTED",
+      "state.__table_data__.data.logo.data.0": "FULL_EXPORTED",
+      "state.__table_data__.data.age": "SEMI_EXPORTED",
+      "state.__table_data__.data.age.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.age.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.data.age.hidden": "FULL_EXPORTED",
+      "state.__table_data__.data.age.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.data.age.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.data.age.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.data.age.schema": "FULL_EXPORTED",
+      "state.__table_data__.data.age.data": "SEMI_EXPORTED",
+      "state.__table_data__.data.age.data.0": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime": "SEMI_EXPORTED",
+      "state.__table_data__.inode.mtime.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.hidden": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.inode.mtime.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.schema": "FULL_EXPORTED",
+      "state.__table_data__.inode.mtime.data": "SEMI_EXPORTED",
+      "state.__table_data__.inode.mtime.data.0": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor": "SEMI_EXPORTED",
+      "state.__table_data__.inode.last_editor.update_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.sort_allowed": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.hidden": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.action_config": "SEMI_EXPORTED",
+      "state.__table_data__.inode.last_editor.action_config.action_type": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.action_config.href": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.schema": "FULL_EXPORTED",
+      "state.__table_data__.inode.last_editor.data": "SEMI_EXPORTED",
+      "state.__table_data__.inode.last_editor.data.0": "FULL_EXPORTED",
+      "state.workOrderList": "FULL_EXPORTED",
+      "state.conditionsConfig": "FULL_EXPORTED",
+      "state.initialVars": "FULL_EXPORTED",
+      "state.vars": "FULL_EXPORTED",
+      "state.varsFieldMap": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_related_logicRes": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_related_logicRes.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_related_logicRes.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_imageid": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_imageid.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_imageid.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_subnet": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_subnet.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_subnet.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_resource_config": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_resource_config.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_resource_config.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_account": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_account.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud_account.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_vpc": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_vpc.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_vpc.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_system_disk": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_system_disk.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_system_disk.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_data_disks": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_data_disks.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_data_disks.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_cloud.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cloud.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-3qdn0a6p1yuf0",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "conditions": true,
+      "fragment": false,
+      "update_allowed": true,
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "selected": true,
+        "multi": true,
+        "dynamic": true,
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [
+        "cmdb_x-1w1g9tdi63t3p"
+      ],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "columnsStyle": [],
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_u_crf_server-1lxvllc555a2h",
+            "cmdb_u_crf_server-xo4bmq67f80y",
+            "cmdb_u_crf_server-2u1lq716rm1an",
+            "cmdb_u_crf_server-3uqtxa8ncniqz",
+            "cmdb_u_crf_server-3e5wum8s8qh2m",
+            "cmdb_u_crf_server-2p8pdddlcddp7",
+            "cmdb_u_crf_server-omkqg5pu3k6z",
+            "cmdb_u_crf_server-3aptovg2040sn",
+            "cmdb_u_crf_server-aq0zogtzxfh1",
+            "cmdb_u_crf_server-2rd1ygquapsn6"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "instancename",
+            "demo-agent-dont-delete",
+            "test-yc",
+            "test-binhai",
+            "test-yandongdong",
+            "worker-k8s-for-cs-c0a98b63856d44bddaf22a99596fae637",
+            "worker-k8s-for-cs-c0a98b63856d44bddaf22a99596fae637",
+            "iZj6chbm6rztmgrins3baiZ",
+            "logic001-000001",
+            "shrpg-vpnTOoffice"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "indexes.cmdb_index-3t0rafmtzousy": {
+          "action_config": {},
+          "data": [
+            [
+              "sourcetree-386a2e9a014c"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        "data.Tags.TagKey": {
+          "action_config": {},
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        "data.Tags.TagValue": {
+          "action_config": {},
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        "indexes.cmdb_index-zy5o5ad8hhh7": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-1yam7nytu0lzp": {
+          "action_config": {},
+          "data": [
+            "cmdb_u_crf_image-18qozqe09rplx",
+            "cmdb_u_crf_image-18qozqe09rplx",
+            "cmdb_u_crf_image-bamo4q0kpdoh",
+            "cmdb_u_crf_image-1cit28tso1dis",
+            "cmdb_u_crf_image-2ms9fa5jnu0nv",
+            "centos_7_9_x64_20G_alibase_20201228.vhd",
+            "centos_7_9_x64_20G_alibase_20201228.vhd",
+            "cmdb_u_crf_image-37e1ua4m31w8f",
+            "centos_7_9_x64_20G_alibase_20210128.vhd",
+            "cmdb_u_crf_image-2ms9fa5jnu0nv"
+          ]
+        },
+        "indexes.cmdb_index-3bxtoukdedsor": {
+          "action_config": {},
+          "data": [
+            "cmdb_u_crf_vswitch-hc2mn9fd53b0",
+            "cmdb_u_crf_vswitch-2njs1hcyiethy",
+            "cmdb_u_crf_vswitch-2rmbqexaziw8n",
+            "cmdb_u_crf_vswitch-1g7excmdc84ky",
+            "cmdb_u_crf_vswitch-1g7excmdc84ky",
+            "cmdb_u_crf_vswitch-3d02b1h71wiq9",
+            "cmdb_u_crf_vswitch-2fziq4bi1ct7y",
+            "cmdb_u_crf_vswitch-9mcjgebizbr2",
+            "vsw-uf68adv34f0uw6lc9qawk",
+            "cmdb_u_crf_vswitch-1umh8uf1nqnwn"
+          ]
+        },
+        "indexes.cmdb_index-cloud_resource_config": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod",
+            "cmdb_x-2pzbzscedddod"
+          ]
+        },
+        "indexes.cmdb_index-26mgotsn8v2tg": {
+          "action_config": {},
+          "data": [
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux",
+            "Linux"
+          ]
+        },
+        "indexes.cmdb_index-cloud_account": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-lthm0xeke81z",
+            "cmdb_x-lthm0xeke81z",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-37tw0igdr0v2p",
+            "cmdb_x-1pvszh24k1cfb",
+            "cmdb_x-37tw0igdr0v2p"
+          ]
+        },
+        "indexes.cmdb_index-26lrotpomsf9d": {
+          "action_config": {},
+          "data": [
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs",
+            "ecs"
+          ]
+        },
+        "indexes.cmdb_index-region": {
+          "action_config": {},
+          "data": [
+            "cn-hongkong",
+            "cn-shanghai",
+            "cn-hongkong",
+            "cn-shanghai",
+            "cn-shanghai",
+            "cn-hongkong",
+            "cn-hongkong",
+            "cn-hongkong",
+            "cn-shanghai",
+            "cn-shanghai"
+          ]
+        },
+        "indexes.cmdb_index-xgm9kh3lu3mg": {
+          "action_config": {},
+          "data": [
+            [
+              "47.243.61.129"
+            ],
+            [
+              "106.14.68.159"
+            ],
+            [
+              "47.243.102.213"
+            ],
+            [
+              "47.117.135.230"
+            ],
+            [
+              "106.15.106.17"
+            ],
+            [],
+            [],
+            [
+              "47.243.84.196"
+            ],
+            [
+              "47.117.133.173"
+            ],
+            [
+              "101.133.220.115"
+            ]
+          ]
+        },
+        "indexes.cmdb_index-2c3gcau1bnk85": {
+          "action_config": {},
+          "data": [
+            [
+              "172.22.12.60"
+            ],
+            [
+              "172.19.252.162"
+            ],
+            [
+              "172.28.93.121"
+            ],
+            [
+              "10.39.1.27"
+            ],
+            [
+              "10.39.1.25"
+            ],
+            [
+              "10.0.205.69"
+            ],
+            [
+              "10.0.215.154"
+            ],
+            [
+              "10.0.27.172"
+            ],
+            [
+              "10.11.12.56"
+            ],
+            [
+              "10.39.0.29"
+            ]
+          ]
+        },
+        "indexes.cmdb_index-1yhey410ex3f2": {
+          "action_config": {},
+          "data": [
+            "cmdb_u_crf_vpc-3mun2nmpawqs5",
+            "cmdb_u_crf_vpc-213joxa6jzlku",
+            "cmdb_u_crf_vpc-1yzh72229p4oi",
+            "cmdb_u_crf_vpc-35d6729k0e3b3",
+            "cmdb_u_crf_vpc-35d6729k0e3b3",
+            "cmdb_u_crf_vpc-s6jbs647dcyv",
+            "cmdb_u_crf_vpc-s6jbs647dcyv",
+            "cmdb_u_crf_vpc-s6jbs647dcyv",
+            "vpc-uf6pjk47h76cjqs455jrn",
+            "cmdb_u_crf_vpc-35d6729k0e3b3"
+          ]
+        },
+        "data.memory": {
+          "action_config": {},
+          "data": [
+            1073741824,
+            8589934592,
+            8589934592,
+            8589934592,
+            8589934592,
+            8589934592,
+            8589934592,
+            4294967296,
+            1073741824,
+            1073741824
+          ]
+        },
+        "indexes.cmdb_index-dzm41ig72dbn": {
+          "action_config": {},
+          "data": [
+            "ecs.t6-c2m1.large",
+            "ecs.g6a.large",
+            "ecs.c6e.xlarge",
+            "ecs.s6-c1m2.xlarge",
+            "ecs.s6-c1m4.large",
+            "ecs.c6e.xlarge",
+            "ecs.c6e.xlarge",
+            "ecs.c6.large",
+            "ecs.s6-c1m1.small",
+            "ecs.s6-c1m1.small"
+          ]
+        },
+        "indexes.cmdb_index-3lofvn1raniji": {
+          "action_config": {},
+          "data": [
+            1619338380,
+            1619145360,
+            1619000820,
+            1618988460,
+            1618820940,
+            1618460160,
+            1618200180,
+            1617951180,
+            1617095340,
+            1597214040
+          ]
+        },
+        "indexes.cmdb_index-3nenrn062pzmn": {
+          "action_config": {},
+          "data": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        "data.cpu": {
+          "action_config": {},
+          "data": [
+            2,
+            2,
+            4,
+            4,
+            2,
+            4,
+            4,
+            2,
+            1,
+            1
+          ]
+        },
+        "indexes.cmdb_index-39833o1pvvbm7": {
+          "action_config": {},
+          "data": [
+            "CentOS  7.9 64位",
+            "CentOS  7.9 64位",
+            "CentOS  7.6 64位",
+            "CentOS  7.6 64位",
+            "CentOS  7.6 64位",
+            "CentOS  7.9 64位",
+            "CentOS  7.9 64位",
+            "CentOS  7.9 64位",
+            "CentOS  7.9 64位",
+            "CentOS  7.6 64位"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "i-j6chxzngv70aqk1d4937",
+            "i-uf60m3jz55gno63drz4m",
+            "i-j6c3v48zpp7djrijq5xy",
+            "i-uf67tq257kfhosrwaa69",
+            "i-uf68os1r0jkpjrqeh0c4",
+            "i-j6cc07duojmyj8kzyhba",
+            "i-j6c096b7xiuxt4ppl9jw",
+            "i-j6chbm6rztmgrins3bai",
+            "i-uf650fh5dpuurqi2xo1d",
+            "i-uf66kyr2742vgu19r5p4"
+          ]
+        },
+        "indexes.cmdb_index-3ly0jzx6ccciz": {
+          "action_config": {},
+          "data": [
+            "cmdb_u_crf_cloud_disk-1qapoofbf13zp",
+            "cmdb_u_crf_cloud_disk-27oi3dj1bjrj7",
+            "cmdb_u_crf_cloud_disk-1qtkhk75ep4w4",
+            "cmdb_u_crf_cloud_disk-1v1hdkcxfo6d0",
+            "cmdb_u_crf_cloud_disk-24jsho5oo9xfp",
+            "cmdb_u_crf_cloud_disk-38e3vbdhfcts3",
+            "cmdb_u_crf_cloud_disk-3g94oy0hs2nrv",
+            "cmdb_u_crf_cloud_disk-1jp3o0xgp2lwj",
+            "cmdb_u_crf_cloud_disk-2hkh3ri3j7cp2",
+            "cmdb_u_crf_cloud_disk-34mpqt7wr9dcq"
+          ]
+        },
+        "indexes.cmdb_index-zone": {
+          "action_config": {},
+          "data": [
+            "cn-hongkong-d",
+            "cn-shanghai-b",
+            "cn-hongkong-d",
+            "cn-shanghai-g",
+            "cn-shanghai-g",
+            "cn-hongkong-b",
+            "cn-hongkong-c",
+            "cn-hongkong-b",
+            "cn-shanghai-g",
+            "cn-shanghai-e"
+          ]
+        },
+        "indexes.cmdb_index-2m0a8cdlkeajw": {
+          "action_config": {},
+          "data": [
+            "i-j6chxzngv70aqk1d4937",
+            "i-uf60m3jz55gno63drz4m",
+            "i-j6c3v48zpp7djrijq5xy",
+            "i-uf67tq257kfhosrwaa69",
+            "i-uf68os1r0jkpjrqeh0c4",
+            "i-j6cc07duojmyj8kzyhba",
+            "i-j6c096b7xiuxt4ppl9jw",
+            "i-j6chbm6rztmgrins3bai",
+            "i-uf650fh5dpuurqi2xo1d",
+            "i-uf66kyr2742vgu19r5p4"
+          ]
+        },
+        "indexes.cmdb_index-25d3b7mowaj2c": {
+          "action_config": {},
+          "data": [
+            [],
+            [],
+            [
+              "cmdb_u_crf_cloud_disk-1l90guhlgmkds"
+            ],
+            [
+              "cmdb_u_crf_cloud_disk-3hy72u01kpxdf"
+            ],
+            [],
+            [
+              "cmdb_u_crf_cloud_disk-1h97z0y9s8tw9"
+            ],
+            [],
+            [],
+            [],
+            [
+              "cmdb_u_crf_cloud_disk-2de6y4rx2l00d"
+            ]
+          ]
+        },
+        "indexes.cmdb_index-1k4ffo3pyiwrv": {
+          "action_config": {},
+          "data": [
+            "PostPaid",
+            "PostPaid",
+            "PostPaid",
+            "PrePaid",
+            "PostPaid",
+            "PostPaid",
+            "PostPaid",
+            "PostPaid",
+            "PrePaid",
+            "PrePaid"
+          ]
+        },
+        "indexes.cmdb_index-1h2jo6o503e6n": {
+          "action_config": {},
+          "data": [
+            4102415940,
+            4102415940,
+            4102415940,
+            1621612800,
+            4102415940,
+            4102415940,
+            4102415940,
+            4102415940,
+            1617724800,
+            1620835200
+          ]
+        },
+        "indexes.cmdb_index-3si1uf8kjn4xt": {
+          "action_config": {},
+          "data": [
+            "Running",
+            "Running",
+            "Running",
+            "Running",
+            "Running",
+            "Running",
+            "Running",
+            "Running",
+            "Stopped",
+            "Running"
+          ]
+        },
+        "indexes.cmdb_index-vendor": {
+          "action_config": {},
+          "data": [
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud",
+            "cmdb_vendor-alicloud"
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1619339372,
+            1619339372,
+            1619339319,
+            1619339317,
+            1619339317,
+            1619339319,
+            1619339319,
+            1619339319,
+            1617939946,
+            1619339317
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf",
+            "opsmind_crf"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_related_logicRes": {},
+        "vars.indexes_imageid": {},
+        "vars.indexes_subnet": {},
+        "vars.indexes_cloud_resource_config": {},
+        "vars.indexes_cloud_account": {},
+        "vars.indexes_vpc": {},
+        "vars.indexes_system_disk": {},
+        "vars.indexes_data_disks": {
+          "value": []
+        },
+        "vars.indexes_cloud": {}
+      }
+    },
+    "children": {
+      "children.dcf09de33a91.state.type": "{var: state.__table_data__.data.icon}",
+      "children.94c5532079cd.children.d78bc2dbddd7.children.24428631b36c.state.onSuccess.1.trigger": "{var: state.__trigger__.query}",
+      "children.94c5532079cd.children.1ccf5e431a46.children.f176e091e703.state.text": "{var: state.__table_data__.inode.name}",
+      "children.94c5532079cd.children.1ccf5e431a46.children.47458f50820b.state.onSuccess.3.trigger": "{var: state.__trigger__.resetSelected}"
+    },
+    "childrenConfig": [
+      {
+        "index": 1000,
+        "inserted": true,
+        "inserted_name": "操作",
+        "uuid": "94c5532079cd",
+        "u462fc9aac94": "u462fc9aac94"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3s4emqpmvwjfg"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

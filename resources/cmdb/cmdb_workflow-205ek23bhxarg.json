@@ -1,0 +1,123 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-205ek23bhxarg",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "获取模型对象",
+    "namespace": "/cmdb",
+    "descr": "获取模型对象并格式化",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "对象id"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "id": "cmdb_x-3psv8kqe84yu7"
+          }
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "enum": [
+                  "SUCCEEDED",
+                  "FAILED"
+                ]
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "output": {
+                "type": "object",
+                "properties": {}
+              }
+            },
+            "title": "root"
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "es5": "{var:es5.output}",
+          "": {
+            "output": {}
+          }
+        }
+      },
+      {
+        "name": "es5",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-205ek23bhxarg.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {},
+          "__START__": "{var:__START__.output}"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "es5"
+      },
+      {
+        "from": "es5",
+        "to": "__END__"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

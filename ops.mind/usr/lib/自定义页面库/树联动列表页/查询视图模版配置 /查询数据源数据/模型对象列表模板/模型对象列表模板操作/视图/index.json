@@ -1,0 +1,52 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-k7a02kb8kjce",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "视图",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "__trigger__": {},
+      "icon": "",
+      "onClick": [],
+      "size": "middle",
+      "text": "视图",
+      "type": null
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "209a42f61099",
+        "u0752413e37d": "u0752413e37d"
+      }
+    ],
+    "config": {
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "margin": "",
+        "textAlign": null
+      }
+    },
+    "publics": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1bzik7u0xbw1f"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

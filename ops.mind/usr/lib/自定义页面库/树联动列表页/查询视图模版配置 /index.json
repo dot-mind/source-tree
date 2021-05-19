@@ -1,0 +1,82 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2295gr7mp9g2j",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询视图模版配置 ",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-2m6ngrfq365yq",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.data_config": {},
+        "data.view_config.action_config": {},
+        "data.view_config.user_form_data": {},
+        "data.view_config.workOrderList": []
+      },
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.fa0fe1ac9998.children.c9851b476354.state.__lib__.edit_data.data": "{var: state.__row__.data.view_config.update}",
+      "children.fa0fe1ac9998.state.__vars__.vars.id.value": "{var: state.__row__.data.view_config.data_id}",
+      "children.fa0fe1ac9998.children.c9851b476354.children.b52fdead17f8.children.1633a865e110.state.value": "{var: state.__row__.data.view_config.editable}",
+      "children.fa0fe1ac9998.children.c9851b476354.children.5d9dc28d52e2.children.94c5532079cd.children.90fbea33f09b.state.value": "{var: state.__row__.data.view_config.editable}",
+      "children.fa0fe1ac9998.children.c9851b476354.state.__lib__.ql_action": "{var: state.__row__.data.view_config.action_config}",
+      "children.fa0fe1ac9998.children.c9851b476354.children.5d9dc28d52e2.state.workOrderList": "{var: state.__row__.data.view_config.workOrderList}",
+      "children.fa0fe1ac9998.children.c9851b476354.state.__lib__.batch_edit_data.data": "{var: state.__row__.data.view_config.batch}",
+      "children.fa0fe1ac9998.children.c9851b476354.children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.12f1acf8c759.state.input.schema": "{var: state.__row__.data.view_config.create}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "fa0fe1ac9998"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-151jugsdwqn0r"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

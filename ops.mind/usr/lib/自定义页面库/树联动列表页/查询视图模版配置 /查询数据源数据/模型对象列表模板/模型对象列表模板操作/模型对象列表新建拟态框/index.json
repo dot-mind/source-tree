@@ -1,0 +1,101 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-211lr70x0weu2",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表新建拟态框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.onOk.0.args": "NOT_EXPORTED",
+      "state.onOk.0.trigger": "NOT_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.hide": "FULL_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.onOk.0": "NOT_EXPORTED",
+      "state.title": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "title": "",
+      "width": 520,
+      "footer": true,
+      "onOk": [
+        {
+          "trigger": "{var: children.01a724e9fd53.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.083e01a37a03.state.input": "{var: children.1987e1313fad.state.form_data}",
+      "children.23a9fe60af23.state.description": "{var: children.01a724e9fd53.state.output.message}",
+      "children.99eea4c980da.state.input": "{var: children.7c7bb63d2eb1.state.form_data}",
+      "children.99eea4c980da.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.99eea4c980da.state.onSuccess.1.trigger": "{var: children.23a9fe60af23.state.__trigger__.success}",
+      "children.01a724e9fd53.state.onSuccess.1.trigger": "{var: children.23a9fe60af23.state.__trigger__.success}",
+      "children.23a9fe60af23.state.message": "{var: children.01a724e9fd53.state.output.result_name}",
+      "children.083e01a37a03.state.onFail.0.trigger": "{var: children.23a9fe60af23.state.__trigger__.error}",
+      "children.083e01a37a03.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.083e01a37a03.state.onSuccess.1.trigger": "{var: children.23a9fe60af23.state.__trigger__.success}",
+      "children.01a724e9fd53.state.input": "{var: children.1987e1313fad.state.form_data}",
+      "children.01a724e9fd53.state.onFail.0.trigger": "{var: children.23a9fe60af23.state.__trigger__.error}",
+      "children.01a724e9fd53.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "1987e1313fad",
+        "u74266cf1432": "u74266cf1432"
+      },
+      {
+        "uuid": "23a9fe60af23",
+        "u5790c7f7bb3": "u5790c7f7bb3"
+      },
+      {
+        "uuid": "01a724e9fd53",
+        "u2f5602ac878": "u2f5602ac878"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3i7xqzowhf86m",
+      "cmdb_mpage-3809kzo4y00wi",
+      "cmdb_mpage-3rhifvfej8jxy"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-dialog",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

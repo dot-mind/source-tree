@@ -1,0 +1,84 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-23xavl6n66xh2",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表模板操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "direction": "row",
+      "align": "center",
+      "justify": "flex-end",
+      "__trigger__": {}
+    },
+    "children": {
+      "children.47d127837b83.children.82df08f0d24d.state.onClick.0.trigger": "{var: children.0c6c891b412e.state.__trigger__.show}",
+      "children.1633a865e110.children.ce855a1a6655.children.c859bce407b5.state.onClick.0.trigger": "{var: children.0c6c891b412e.state.__trigger__.show}",
+      "children.3846d129e1be.state.title": "删除模型",
+      "children.e5860dccdbb8.state.title": "编辑模型",
+      "children.47d127837b83.children.02b68fc02b95.state.onClick.0.trigger": "{var: children.b4f1bce37073.state.__trigger__.show}",
+      "children.47d127837b83.children.ec2278f8396e.state.onClick.0.trigger": "{var: children.3786292a1e36.state.__trigger__.show}",
+      "children.1633a865e110.children.ce855a1a6655.children.5f1ff8372f2d.state.onClick.0.trigger": "{var: children.3786292a1e36.state.__trigger__.show}",
+      "children.197337c7a87e.children.ef7a586d3217.state.onClick.0.trigger": "{var: children.e6d049366e19.state.__trigger__.show}",
+      "children.47d127837b83.state.onClick.0.trigger": "{var: children.b4f1bce37073.state.__trigger__.show}",
+      "children.b4f1bce37073.state.width": 520,
+      "children.1633a865e110.children.ce855a1a6655.children.6eecf520b38c.state.onClick.0.trigger": "{var: children.af8bbae394c1.state.__trigger__.show}",
+      "children.b4f1bce37073.children.1987e1313fad.state.schema": "{var: children.1633a865e110.children.ce855a1a6655.children.12f1acf8c759.state.output.output}",
+      "children.1633a865e110.children.ce855a1a6655.children.12f1acf8c759.state.onSuccess.0.trigger": "{var: children.b4f1bce37073.state.__trigger__.show}",
+      "children.1633a865e110.children.ce855a1a6655.children.12f1acf8c759.state.onFail.0.trigger": "{var: children.b4f1bce37073.state.__trigger__.hide}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "197337c7a87e",
+        "u95007fbeb87": "u95007fbeb87"
+      },
+      {
+        "uuid": "b4f1bce37073",
+        "u193aa14d796": "u193aa14d796"
+      },
+      {
+        "uuid": "0c6c891b412e",
+        "u23c96e7b9ff": "u23c96e7b9ff"
+      },
+      {
+        "uuid": "3786292a1e36",
+        "u084e6dc8ccf": "u084e6dc8ccf"
+      },
+      {
+        "uuid": "1633a865e110",
+        "ua6c9891537e": "ua6c9891537e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-k7a02kb8kjce",
+      "cmdb_mpage-211lr70x0weu2",
+      "cmdb_mpage-1ruhwhm0nzbxe",
+      "cmdb_mpage-vuf5uxcnwigi",
+      "cmdb_mpage-185cl6dnw9fbb"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

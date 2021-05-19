@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-yh7r23cl5z11",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "获取模型对象",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.id": "FULL_EXPORTED",
+      "state.input": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.output": "FULL_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-205ek23bhxarg",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "input": {},
+      "output": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-122qbrng3sduj",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "树联动列表页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"view_id\":{\"type\":\"string\",\"title\":\"视图模版ID\"},\"varsFieldMap\":{\"type\":\"object\",\"properties\":{},\"title\":\"筛选条件初始值\"},\"varsSchemaMap\":{\"type\":\"object\",\"properties\":{},\"title\":\"创建schema字段初始值\"}},\"required\":[]}",
+      "__lib__": {
+        "view_id": "cmdb_view-trhrb5k2wn2b",
+        "varsFieldMap": {},
+        "varsSchemaMap": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.8732fa83e5d5.children.173d820f33f5.children.6afe9714a0c6.children.7db2d8714603.config.jump.vars.4": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.state.__vars__.vars.id.value": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.5d9dc28d52e2.children.9d10fef377ee.config.jump.vars.4": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.f48553ec994e.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.5d9dc28d52e2.children.1c502778cfd0.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.7245d32085de.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.12f1acf8c759.state.input.vars_map": "{var: state.__lib__.varsSchemaMap}",
+      "children.b8dae710ecac.children.fa0fe1ac9998.children.c9851b476354.children.5d9dc28d52e2.state.__vars__": "{var: state.__lib__.varsFieldMap}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b8dae710ecac",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2295gr7mp9g2j"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

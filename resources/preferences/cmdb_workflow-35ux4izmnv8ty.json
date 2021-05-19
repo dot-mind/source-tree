@@ -1,0 +1,125 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-35ux4izmnv8ty",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "动态获取Schema",
+    "namespace": "/preferences",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "type": "string",
+                "title": "schema",
+                "format": "json-schema"
+              },
+              "vars_map": {
+                "type": "object",
+                "properties": {},
+                "title": "vars_map"
+              }
+            },
+            "required": []
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "vars_map": "{\n    \".indexes.cmdb_index-37kx0yj6pedpf\": 123\n}",
+            "schema": "\"{\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\".inode.name\\\":{\\\"type\\\":\\\"string\\\",\\\"title\\\":\\\"名称\\\"},\\\".indexes.cmdb_index-37kx0yj6pedpf\\\":{\\\"type\\\":\\\"string\\\",\\\"format\\\":\\\"ql-selector?id=cmdb_ql-vwwwia93d9l3\u0026select_mode=single\u0026spec=id\u0026widget=table\\\",\\\"title\\\":\\\"关联组织\\\"}},\\\"required\\\":[\\\".inode.name\\\"]}\",\n      \"update\": \"{\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\".inode.name\\\":{\\\"type\\\":\\\"string\\\",\\\"title\\\":\\\"名称\\\"},\\\".indexes.cmdb_index-37kx0yj6pedpf\\\":{\\\"type\\\":\\\"string\\\",\\\"format\\\":\\\"ql-selector?id=cmdb_ql-vwwwia93d9l3\u0026select_mode=single\u0026spec=id\u0026widget=table\\\",\\\"title\\\":\\\"关联组织\\\"},\\\"id\\\":{\\\"type\\\":\\\"string\\\",\\\"ui:hidden\\\":true}},\\\"required\\\":[\\\".inode.name\\\"]}\",\n      \"batch\": \"{\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\"field\\\":{\\\"type\\\":\\\"string\\\",\\\"title\\\":\\\"字段\\\",\\\"enum\\\":[\\\".inode.name\\\",\\\".indexes.cmdb_index-37kx0yj6pedpf\\\"],\\\"enumNames\\\":[\\\"名称\\\",\\\"关联组织\\\"]},\\\".inode.name\\\":{\\\"type\\\":\\\"string\\\",\\\"title\\\":\\\"名称\\\",\\\"ui:hidden\\\":\\\"{{ rootValue.field !== '.inode.name' }}\\\"},\\\".indexes.cmdb_index-37kx0yj6pedpf\\\":{\\\"type\\\":\\\"string\\\",\\\"format\\\":\\\"ql-selector?id=cmdb_ql-vwwwia93d9l3\u0026select_mode=single\u0026spec=id\u0026widget=table\\\",\\\"title\\\":\\\"关联组织\\\",\\\"ui:hidden\\\":\\\"{{ rootValue.field !== '.indexes.cmdb_index-37kx0yj6pedpf' }}\\\"}}}\""
+          }
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "title": "result"
+              },
+              "result_name": {
+                "type": "string",
+                "title": "result_name"
+              },
+              "message": {
+                "type": "string",
+                "title": "message"
+              },
+              "output": {
+                "type": "string",
+                "title": "output"
+              }
+            },
+            "title": "OUTPUT",
+            "required": []
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "": {},
+          "动态获取shcema": "{var:动态获取shcema.output}"
+        }
+      },
+      {
+        "name": "动态获取shcema",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-35ux4izmnv8ty.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{},\"title\":\"INPUT\"}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\",\"title\":\"result\"},\"result_name\":{\"type\":\"string\",\"title\":\"result_name\"},\"message\":{\"type\":\"string\",\"title\":\"message\"},\"output\":{\"type\":\"string\",\"title\":\"output\"}},\"title\":\"OUTPUT\",\"required\":[]}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "__START__": "{var:__START__.input}"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "动态获取shcema"
+      },
+      {
+        "from": "动态获取shcema",
+        "to": "__END__"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

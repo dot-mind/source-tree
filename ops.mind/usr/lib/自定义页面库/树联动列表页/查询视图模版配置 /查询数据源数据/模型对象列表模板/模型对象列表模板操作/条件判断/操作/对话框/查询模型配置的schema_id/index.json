@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1rkjvk9ahk0cm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询模型配置的schema_id",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__row__": "SEMI_EXPORTED",
+      "state.__row__.indexes.cmdb_index-1llredm1yz8zm.inode.id": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-ifzkstls0nml",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {},
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

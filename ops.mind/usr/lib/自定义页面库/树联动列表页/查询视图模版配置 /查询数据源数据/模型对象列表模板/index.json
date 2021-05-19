@@ -1,0 +1,200 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2as2tpecpvvey",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表模板",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__lib__.common_list.0.name": "NOT_EXPORTED",
+      "state.__lib__.common_list.1": "NOT_EXPORTED",
+      "state.__lib__.common_list.1.id": "NOT_EXPORTED",
+      "state.__lib__.common_list.1.name": "NOT_EXPORTED",
+      "state.__lib__.common_list.0": "NOT_EXPORTED",
+      "state.__lib__.common_list.0.id": "NOT_EXPORTED",
+      "state.__lib__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__lib__.data_id": "FULL_EXPORTED",
+      "state.__lib__.new_data": "SEMI_EXPORTED",
+      "state.__lib__.new_data.data": "FULL_EXPORTED",
+      "state.__lib__.new_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.edit_data": "SEMI_EXPORTED",
+      "state.__lib__.edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.delete_data": "SEMI_EXPORTED",
+      "state.__lib__.delete_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.batch_edit_data": "SEMI_EXPORTED",
+      "state.__lib__.batch_edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.batch_edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.model_id": "FULL_EXPORTED",
+      "state.__lib__.detail_uuid": "FULL_EXPORTED",
+      "state.__lib__.editable": "FULL_EXPORTED",
+      "state.__lib__.ql_vars": "FULL_EXPORTED",
+      "state.__lib__.pkg_id": "FULL_EXPORTED",
+      "state.__lib__.ql_action": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hide": true,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"data_id\":{\"type\":\"string\",\"title\":\"常用查询ID\"},\"new_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"新建时数据\",\"required\":[\"data\",\"wf_id\"]},\"edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"修改时数据\",\"required\":[\"data\",\"wf_id\"]},\"delete_data\":{\"type\":\"object\",\"properties\":{\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"删除时数据\",\"required\":[\"wf_id\"]},\"batch_edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"批量编辑数据\",\"required\":[\"data\",\"wf_id\"]},\"model_id\":{\"type\":\"string\",\"title\":\"模型配置ID\"},\"detail_uuid\":{\"type\":\"string\",\"title\":\"详情页uuid\"},\"editable\":{\"type\":\"boolean\",\"default\":true,\"title\":\"是否可编辑新建\"},\"ql_vars\":{\"type\":\"string\",\"title\":\"常用查询变量\"},\"pkg_id\":{\"type\":\"string\",\"title\":\"数据模板ID\"},\"ql_action\":{\"type\":\"object\",\"properties\":{},\"title\":\"动作配置\"}},\"required\":[\"data_id\",\"new_data\",\"edit_data\",\"delete_data\",\"model_id\",\"batch_edit_data\",\"detail_uuid\"],\"title\":\"可选参数\"}",
+      "__lib__": {
+        "new_data": {
+          "data": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+          "wf_id": "cmdb_workflow-5sp0ru7mpc2f"
+        },
+        "edit_data": {
+          "data": "{\"type\":\"object\",\"properties\":{}}",
+          "wf_id": "cmdb_workflow-1jqghoygsso3e"
+        },
+        "delete_data": {
+          "wf_id": "cmdb_workflow-20rzvhtg3skaj"
+        },
+        "batch_edit_data": {
+          "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\"],\"enumNames\":[\"名称\",\"描述\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"}}}",
+          "wf_id": "cmdb_workflow-18mz4b9s282vr"
+        },
+        "editable": true,
+        "ql_action": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.5d9dc28d52e2.children.94c5532079cd.children.d78bc2dbddd7.children.5cc0607d5f9e.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.7c7bb63d2eb1.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.7c7bb63d2eb1.state.var_schema": "{var: state.__lib__.new_json_schema.vars_data}",
+      "children.5d9dc28d52e2.children.7ba1d899db59.children.66515a6f52d5.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.d229c79c36d9.children.68394dbaac89.children.9b7e7dcc33c5.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.5d9dc28d52e2.children.9d10fef377ee.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.b52fdead17f8.children.197337c7a87e.children.d5c3e5f486f3.state.array": "{var: state.__lib__.common_list}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.ids.2": null,
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.083e01a37a03.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.083e01a37a03.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.b4f1bce37073.state.title": "{var: children.f006446c93c3.state.output}",
+      "children.b52fdead17f8.children.e5860dccdbb8.children.67a3998eddeb.state.schema": "{var: state.__lib__.batch_edit_data.data}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.config.resId": "{var: state.__lib__.batch_edit_data.wf_id}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.state.input.ids": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.e5860dccdbb8.children.00e973c54244.config.resId": "{var: state.__lib__.batch_edit_data.wf_id}",
+      "children.b52fdead17f8.children.47d127837b83.children.82df08f0d24d.state.click": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.ids": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.ids.1": null,
+      "children.b52fdead17f8.children.b4f1bce37073.children.99eea4c980da.state.onSuccess.2.trigger": "{var: children.d229c79c36d9.children.68394dbaac89.state.__trigger__.query}",
+      "children.5d9dc28d52e2.children.9d10fef377ee.config.jump.vars.2": "{var: state.__lib__.model_id}",
+      "children.b52fdead17f8.children.47d127837b83.children.ec2278f8396e.state.click": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.3786292a1e36.children.f611e56b1bef.state.input.ids": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.1987e1313fad.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.b52fdead17f8.children.3846d129e1be.children.01e4ba58eaa1.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.5d9dc28d52e2.children.ed6119bab6e7.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.b52fdead17f8.children.3786292a1e36.children.f611e56b1bef.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.a07ad67dd22a.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.01a724e9fd53.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.01a724e9fd53.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.3846d129e1be.children.01e4ba58eaa1.state.input.ids": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.5d9dc28d52e2.children.94c5532079cd.children.1ccf5e431a46.children.47458f50820b.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.b52fdead17f8.children.197337c7a87e.children.209a42f61099.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.ids.0": null,
+      "children.b52fdead17f8.children.0c6c891b412e.children.0936358e351b.state.schema": "{var: state.__lib__.batch_edit_data.data}",
+      "children.b52fdead17f8.children.3786292a1e36.children.f611e56b1bef.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.b4f1bce37073.children.99eea4c980da.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.b52fdead17f8.children.3846d129e1be.children.01e4ba58eaa1.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.e5860dccdbb8.children.00e973c54244.state.onSuccess.2.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.5d9dc28d52e2.children.94c5532079cd.children.d78bc2dbddd7.children.b17266bc1103.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.5d9dc28d52e2.children.94c5532079cd.children.d78bc2dbddd7.children.24428631b36c.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.d5ccaa0fff80.state.selected": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.5d9dc28d52e2.config.resId": "{var: state.__lib__.data_id}",
+      "children.5d9dc28d52e2.children.9533bd2e9c6c.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.5d9dc28d52e2.children.9d10fef377ee.config.jump.vars.3": "{var: state.__lib__.pkg_id}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.d5ccaa0fff80.state.id": "{var: state.__lib__.data_id}",
+      "children.b52fdead17f8.children.f6a1016ea565.children.96471e17b71d.state.onOk.0": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.af8bbae394c1.children.7f51709c619c.state.onOk.0": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.state.onSuccess.3.trigger": "{var: children.5d9dc28d52e2.state.__trigger__.resetSelected}",
+      "children.5d9dc28d52e2.children.fb26e7882b86.children.53934e74b15a.children.03a528b377fb.children.1e599ecd5d9e.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.5d9dc28d52e2.children.fb26e7882b86.children.53934e74b15a.children.03a528b377fb.children.54b575483586.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.5d9dc28d52e2.children.fb26e7882b86.children.53934e74b15a.children.51730d1d910c.children.36462935a6b0.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.5d9dc28d52e2.state.__table_data__.inode.name.action_config.action_type": "link",
+      "children.5d9dc28d52e2.state.__table_data__.inode.name.action_config.href": "{var: children.7245d32085de.state.output}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.d52ddb997c9f.children.b9e2d6137df4.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.d52ddb997c9f.children.7296cbfc37d1.state.onOk.1": "{var: children.5d9dc28d52e2.state.__trigger__.query}",
+      "children.5d9dc28d52e2.state.__table_data__": "{var: state.__lib__.ql_action}",
+      "children.5d9dc28d52e2.children.a67f966e60d1.state.value": "{var: state.__lib__.editable}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.cdbad8081fef.state.source": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.d5ccaa0fff80.state.vars": "{var: children.5d9dc28d52e2.state.__vars__}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.ql_id": "{var: children.5d9dc28d52e2.config.resId}",
+      "children.b52fdead17f8.children.0c6c891b412e.children.1610bc5462fc.state.input.conditions": "{var: children.5d9dc28d52e2.state.conditionsConfig}",
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.state.input.ql_id": "{var: children.5d9dc28d52e2.config.resId}",
+      "children.b52fdead17f8.children.3786292a1e36.children.64e22defced2.state.input.conditions": "{var: children.5d9dc28d52e2.state.conditionsConfig}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.c859bce407b5.state.click": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.b52fdead17f8.children.1633a865e110.children.ce855a1a6655.children.5f1ff8372f2d.state.click": "{var: children.5d9dc28d52e2.state.rowSelection.objects}",
+      "children.05290f712be1.state.input_data.name": "{var: children.899029208d4f.state.__row__.inode.name}",
+      "children.f006446c93c3.state.input_data.name": "{var: children.899029208d4f.state.__row__.inode.name}",
+      "children.5d9dc28d52e2.children.94c5532079cd.children.d78bc2dbddd7.state.title": "{var: children.05290f712be1.state.output}"
+    },
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "b52fdead17f8",
+        "uebbb6cd2721": "uebbb6cd2721"
+      },
+      {
+        "md": 24,
+        "uuid": "5d9dc28d52e2",
+        "u36902ca1fa0": "u36902ca1fa0"
+      },
+      {
+        "uuid": "7245d32085de"
+      },
+      {
+        "uuid": "f006446c93c3"
+      },
+      {
+        "uuid": "05290f712be1"
+      },
+      {
+        "uuid": "899029208d4f"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-23xavl6n66xh2",
+      "cmdb_mpage-mq1u1zpi42rl",
+      "cmdb_mpage-u8jvf2gmiq6e",
+      "cmdb_mpage-133r3dnfpqb28",
+      "cmdb_mpage-u4j0sjng0pe9",
+      "cmdb_mpage-3reovi4auacbt"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

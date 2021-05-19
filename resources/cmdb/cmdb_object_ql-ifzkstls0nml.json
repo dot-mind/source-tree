@@ -1,0 +1,90 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-ifzkstls0nml",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "查询模型配置的schema_id",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-schema"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "multi": false,
+      "selects": [
+        ".indexes.cmdb_index-1llredm1yz8zm.inode.id as 资源模型ID"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

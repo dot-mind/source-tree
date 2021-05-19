@@ -1,0 +1,81 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1bzik7u0xbw1f",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询资源模型关联视图",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "8733254de52d",
+        "u19a9358650e": "u19a9358650e"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_ql-h65ubkok9uep",
+      "style": {}
+    },
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED"
+    },
+    "state": {
+      "__table_data__": {
+        "inode.name": {
+          "data": [],
+          "hidden": false
+        },
+        "indexes.cmdb_index-21bqd55ohdq6w.data.remarks": {
+          "data": [],
+          "hidden": true
+        },
+        "inode.id": {
+          "data": []
+        },
+        "inode.last_editor": {
+          "data": [],
+          "hidden": true
+        },
+        "inode.mtime": {
+          "data": [],
+          "hidden": true
+        }
+      },
+      "__trigger__": {},
+      "__vars__": {
+        "vars.id": {
+          "value": ""
+        }
+      },
+      "fragment": true,
+      "rowSelection": {
+        "objects": []
+      },
+      "setting": {
+        "sorts": []
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1vlthbrxqbmnt"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

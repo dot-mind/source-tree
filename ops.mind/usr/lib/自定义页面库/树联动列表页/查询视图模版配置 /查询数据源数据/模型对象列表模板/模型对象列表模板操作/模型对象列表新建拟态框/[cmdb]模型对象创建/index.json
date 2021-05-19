@@ -1,0 +1,139 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3rhifvfej8jxy",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "[cmdb]模型对象创建",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": true,
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "background": "",
+        "color": "",
+        "fontSize": "",
+        "margin": "",
+        "padding": "",
+        "textAlign": ""
+      }
+    },
+    "publics": {
+      "state.onFail": "SEMI_EXPORTED",
+      "state.onSuccess.0": "SEMI_EXPORTED",
+      "state.input.config_id": "FULL_EXPORTED",
+      "state.input.data.boolean_option": "SEMI_EXPORTED",
+      "state.input.field_name": "FULL_EXPORTED",
+      "state.onSuccess.2": "SEMI_EXPORTED",
+      "state.output.output": "SEMI_EXPORTED",
+      "state.input.data.object_option.0.field_type": "FULL_EXPORTED",
+      "state.input.index.string_option.enum": "FULL_EXPORTED",
+      "state.onSuccess.0.args": "FULL_EXPORTED",
+      "state.onSuccess": "SEMI_EXPORTED",
+      "state.onSuccess.2.args": "FULL_EXPORTED",
+      "state.input.data.number_option.minimum": "FULL_EXPORTED",
+      "state.input.data.string_option.pattern": "FULL_EXPORTED",
+      "state.input.show": "FULL_EXPORTED",
+      "state.input.index.string_option.default": "FULL_EXPORTED",
+      "state.onSuccess.1.args": "FULL_EXPORTED",
+      "state.output.output.failed_count": "FULL_EXPORTED",
+      "state.input.field_id": "FULL_EXPORTED",
+      "state.output.result": "FULL_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "state.input.required": "FULL_EXPORTED",
+      "state.input.index.id": "FULL_EXPORTED",
+      "state.input.index.number_option.minimum": "FULL_EXPORTED",
+      "state.onFail.0.trigger": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.input.data.object_option.0.field_id": "FULL_EXPORTED",
+      "state.input.data.string_option": "SEMI_EXPORTED",
+      "state.onFail.0.args": "FULL_EXPORTED",
+      "state.input.data.string_option.default": "FULL_EXPORTED",
+      "state.input.index.boolean_option": "SEMI_EXPORTED",
+      "state.input.index.number_option": "SEMI_EXPORTED",
+      "state.input.index.string_option.pattern": "FULL_EXPORTED",
+      "state.onSuccess.1.trigger": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "state.input": "SEMI_EXPORTED",
+      "state.input.data.object_option.0.field_name": "FULL_EXPORTED",
+      "state.output.result_name": "FULL_EXPORTED",
+      "state.input.searched": "FULL_EXPORTED",
+      "state.input.data.number_option.maximum": "FULL_EXPORTED",
+      "state.input.id": "FULL_EXPORTED",
+      "state.input.index": "SEMI_EXPORTED",
+      "state.input.index.number_option.default": "FULL_EXPORTED",
+      "state.input.index.string_option": "SEMI_EXPORTED",
+      "state.input.data.field_type": "FULL_EXPORTED",
+      "state.input.data.number_option": "SEMI_EXPORTED",
+      "state.input.data.object_option": "SEMI_EXPORTED",
+      "state.input.inode": "FULL_EXPORTED",
+      "state.output.message": "FULL_EXPORTED",
+      "state.input.data.boolean_option.default": "FULL_EXPORTED",
+      "state.input.data.string_option.enum": "FULL_EXPORTED",
+      "state.input.index.number_option.maximum": "FULL_EXPORTED",
+      "state.input.data": "FULL_EXPORTED",
+      "state.input.index.boolean_option.default": "FULL_EXPORTED",
+      "state.input.index.field_type": "FULL_EXPORTED",
+      "state.onSuccess.2.trigger": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.input.data.object_option.0": "SEMI_EXPORTED",
+      "state.input.editable": "FULL_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.onSuccess.1": "SEMI_EXPORTED",
+      "state.output.output.update_count": "FULL_EXPORTED",
+      "state.onSuccess.0.trigger": "FULL_EXPORTED",
+      "state.output": "SEMI_EXPORTED",
+      "state.input.data.number_option.default": "FULL_EXPORTED",
+      "state.input.index.is_array": "FULL_EXPORTED",
+      "state.onFail.0": "SEMI_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {},
+      "input": {
+        "inode": {},
+        "data": {},
+        "indexes": {}
+      },
+      "onFail": [
+        {
+          "args": []
+        }
+      ],
+      "onSuccess": [
+        {
+          "args": []
+        },
+        {
+          "args": []
+        },
+        {
+          "args": []
+        }
+      ],
+      "output": {
+        "output": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

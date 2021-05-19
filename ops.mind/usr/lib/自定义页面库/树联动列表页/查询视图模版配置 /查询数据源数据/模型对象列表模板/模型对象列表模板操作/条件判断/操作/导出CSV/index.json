@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1pl48l12ja2a9",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "导出CSV",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.id": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.selected": "FULL_EXPORTED",
+      "state.__trigger__.exoprtCsv": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.vars": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "selected": [],
+      "vars": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-3f5s7w3sfu7k7",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

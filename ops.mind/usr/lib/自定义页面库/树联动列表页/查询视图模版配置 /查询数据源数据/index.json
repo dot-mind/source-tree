@@ -1,0 +1,72 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-151jugsdwqn0r",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询数据源数据",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-1r3gt583e5vce",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.new_data": {},
+        "data.edit_data": {},
+        "data.batch_edit_data": {},
+        "data.delete_data": {}
+      },
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.c9851b476354.state.__lib__.data_id": "{var: state.__row__.data.ql}",
+      "children.c9851b476354.state.__lib__.new_data.wf_id": "{var: state.__row__.data.new_data.wf_id}",
+      "children.c9851b476354.state.__lib__.edit_data.wf_id": "{var: state.__row__.data.edit_data.wf_id}",
+      "children.c9851b476354.state.__lib__.delete_data.wf_id": "{var: state.__row__.data.delete_data.wf_id}",
+      "children.c9851b476354.state.__lib__.batch_edit_data.wf_id": "{var: state.__row__.data.batch_edit_data.wf_id}",
+      "children.c9851b476354.state.__lib__.editable": "{var: state.__row__.data.editable}",
+      "children.c9851b476354.state.__lib__.pkg_id": "{var: state.__vars__.vars.id.value}",
+      "children.c9851b476354.state.__lib__.model_id": "{var: state.__row__.indexes.cmdb_index-5idpkmb7eqne.inode.id}",
+      "children.c9851b476354.children.899029208d4f.state.__vars__.vars.id.value": "{var: children.c9851b476354.state.__lib__.model_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "c9851b476354"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2as2tpecpvvey"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}
