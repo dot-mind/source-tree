@@ -1,0 +1,42 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mcomponent-2uwszlfpgkmg3",
+    "schema_id": "cmdb_schema_mcomponent-1",
+    "name": "配置资源树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "type": "object",
+      "title": "状态",
+      "properties": {
+        "selectedKeys": {
+          "type": "string",
+          "title": "选中节点"
+        },
+        "adminMode": {
+          "type": "boolean",
+          "title": "是否是管理员模式",
+          "default": false
+        },
+        "id": {
+          "type": "string",
+          "title": "树配置ID"
+        }
+      },
+      "required": []
+    },
+    "jscode": "resources/scripts/cmdb_mcomponent-2uwszlfpgkmg3.data.jscode.js"
+  },
+  "indexes": {
+    "cmdb_index-component_res_type": "UNKNOWN"
+  }
+}

@@ -133,6 +133,11 @@
       "parent": ""
     },
     {
+      "file": "resources/cmdb_mcomponent-2uwszlfpgkmg3.json",
+      "id": "cmdb_mcomponent-2uwszlfpgkmg3",
+      "parent": ""
+    },
+    {
       "file": "resources/cmdb_mpage-12j7utspido0w.json",
       "id": "cmdb_mpage-12j7utspido0w",
       "parent": ""
@@ -311,6 +316,11 @@
       "file": "resources/lib/cmdb_mpage-1l45czaovb9al.json",
       "id": "cmdb_mpage-1l45czaovb9al",
       "parent": "cmdb_mpage-229tk9jocs2fq"
+    },
+    {
+      "file": "resources/scripts/cmdb_mcomponent-2uwszlfpgkmg3.data.jscode.js",
+      "id": "",
+      "parent": ""
     },
     {
       "file": "resources/scripts/cmdb_workflow-10w31drnaf7l2.data.nodes.2.config.script.js",
