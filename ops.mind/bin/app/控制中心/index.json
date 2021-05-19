@@ -49,8 +49,7 @@
         "schema_id": "schema_id",
         "id": "id",
         "pkg_id": "pkg_id"
-      },
-      "__trigger__": {}
+      }
     },
     "children": {
       "children.5f860b291634.state.selectedKey": "{var: state.vars.selected_app}"

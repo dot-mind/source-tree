@@ -98,6 +98,11 @@
       "parent": "cmdb_mpage-2rdcdsc5zjaox"
     },
     {
+      "file": "ops.mind/usr/lib/自定义页面库/配置资源树/JsonSchema表单/index.json",
+      "id": "cmdb_mpage-mfbn0rx1u7ib",
+      "parent": "cmdb_mpage-1l45czaovb9al"
+    },
+    {
       "file": "ops.mind/usr/lib/自定义页面库/配置资源树/index.json",
       "id": "cmdb_mpage-1l45czaovb9al",
       "parent": "cmdb_mpage-229tk9jocs2fq"

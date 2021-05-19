@@ -33,9 +33,14 @@
       "__trigger__": {}
     },
     "children": {
-      "children.81c6e557afcf.state.id": "{var: state.__lib__.id}"
+      "children.81c6e557afcf.state.id": "{var: children.873bc5377db2.state.form_data.treeId}",
+      "children.873bc5377db2.state.form_data.treeId": "{var: state.__lib__.id}"
     },
     "childrenConfig": [
+      {
+        "uuid": "873bc5377db2",
+        "md": 24
+      },
       {
         "uuid": "81c6e557afcf",
         "md": 24
@@ -44,6 +49,7 @@
   },
   "indexes": {
     "cmdb_index-mpage_children": [
+      "cmdb_mpage-mfbn0rx1u7ib",
       "cmdb_mpage-e5l32lwcyl9d"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",

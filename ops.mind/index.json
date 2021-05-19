@@ -37,9 +37,9 @@
       },
       "mind": {
         "children": [
-          "cmdb_mpage-infz0if4d6ir",
+          "cmdb_mpage-gfd5hncjcyu9",
           "cmdb_mpage-3fkl2i5f04ttb",
-          "cmdb_mpage-gfd5hncjcyu9"
+          "cmdb_mpage-infz0if4d6ir"
         ],
         "locked": true
       }
@@ -56,21 +56,21 @@
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "295d6d87d9bd"
+        "uuid": "3e3de08e119b"
       },
       {
         "uuid": "e6a37f5f14ae"
       },
       {
-        "uuid": "3e3de08e119b"
+        "uuid": "295d6d87d9bd"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-infz0if4d6ir",
+      "cmdb_mpage-gfd5hncjcyu9",
       "cmdb_mpage-3fkl2i5f04ttb",
-      "cmdb_mpage-gfd5hncjcyu9"
+      "cmdb_mpage-infz0if4d6ir"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-3o666587lf9r3",
     "cmdb_index-mpage_component_type": "UNKNOWN"
